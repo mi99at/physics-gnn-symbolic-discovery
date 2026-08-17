@@ -1,0 +1,31 @@
+name: Build paper PDF
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "paper/**"
+      - ".github/workflows/build-paper.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile manuscript
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: paper/physics_gnn_symbolic_discovery.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: physics-gnn-symbolic-discovery-paper
+          path: paper/physics_gnn_symbolic_discovery.pdf
+          if-no-files-found: error
