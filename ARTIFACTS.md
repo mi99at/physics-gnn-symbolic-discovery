@@ -8,7 +8,7 @@ The following files are required for a complete, reproducible release but are to
 | `scenario_test_v1.npz` | held-out ladder test set | GitHub release `v1.0.0` | `87771caaef98d3ede91f34e74fb56fca6df3078408b2582bd5b8a3ec3c1c2ba4` |
 | `v9_best.pt` | best archived checkpoint | GitHub release `v1.0.0` | `66c3cf45b1476b40e3e65a84ea6106b51ca911a665d9bf145bb46314eec7302e` |
 | `v9_latest.pt` | latest archived checkpoint | GitHub release `v1.0.0` | `7d1b6b647d0ee59d5991a62f5568b90c57a031be2aec1333da66dd077005cbd9` |
-| `physics_gnn_symbolic_discovery.pdf` | compiled manuscript | tracked in Git and GitHub release `v1.0.0` | `c73d720052b039cd8a43a683273ad1e1bd32671432ac01230afa940bdf394d88` |
+| `physics_gnn_symbolic_discovery.pdf` | DOI-bearing compiled manuscript | tracked in Git and reserved Zenodo record `10.5281/zenodo.21984786` | `cbfe635a2e04133e5e4c88f58608b51005b9ebb75916af802f6cb7b375afa01f` |
 | final `discoveries_v1.json` | 400-pair discovery screen | tracked in Git | `f985ca912e9d2be32eb125eb6dcd9015a1b97341a8f9355755b3a854019545f3` |
 | final `catalog_v1.json` | audit results for all candidates | tracked in Git | `a0d822c081987f318ea52cf4cfb3d0ee073ddd1560d9253b754ee383a126ff9a` |
 

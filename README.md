@@ -44,13 +44,13 @@ The full training run is GPU-oriented. `python gnn_trainer_v9.py --smoke` is a s
 
 The complete 400-candidate discovery screen and matching catalog are tracked in this repository. The large scenario arrays and checkpoints are attached to the [v1.0.0 release](https://github.com/mi99at/physics-gnn-symbolic-discovery/releases/tag/v1.0.0), with checksums in `ARTIFACTS.md`. See `RESULTS_STATUS.md` for the audit boundary and verified results.
 
-The manuscript is available as a [compiled PDF](paper/physics_gnn_symbolic_discovery.pdf) and as [LaTeX source](paper/physics_gnn_symbolic_discovery.tex).
+The manuscript is available as a [compiled PDF](paper/physics_gnn_symbolic_discovery.pdf) and as [LaTeX source](paper/physics_gnn_symbolic_discovery.tex). Its reserved archival DOI is [10.5281/zenodo.21984786](https://doi.org/10.5281/zenodo.21984786); the link will resolve after the Zenodo record is published.
 
 ## Citation
 
 Please cite the software metadata in `CITATION.cff`:
 
-> Md Minnatullah (2026). *Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics*, version 1.0.0. https://github.com/mi99at/physics-gnn-symbolic-discovery
+> Md Minnatullah (2026). *Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics*. Zenodo. https://doi.org/10.5281/zenodo.21984786
 
 ## License
 
