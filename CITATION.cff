@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Solve, Mine, Prove: A Self-Auditing Graph Neural Network for Classical Mechanics"
+title: "Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics"
 type: software
 authors:
   - family-names: Minnatullah

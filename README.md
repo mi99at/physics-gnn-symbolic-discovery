@@ -1,4 +1,4 @@
-# Solve, Mine, Prove
+# Physics GNN Symbolic Discovery
 
 This repository contains the code for a self-auditing graph neural network for a closed, synthetic classical-mechanics corpus. The goal is deliberately modest and testable: learn to infer missing physical quantities from partial observations, probe the trained solver for candidate relationships, and then audit those candidates against the equations used to generate the corpus.
 
@@ -48,7 +48,7 @@ The complete 400-candidate discovery screen and matching catalog are tracked in 
 
 Please cite the software metadata in `CITATION.cff`:
 
-> Md Minnatullah (2026). *Solve, Mine, Prove: A Self-Auditing Graph Neural Network for Classical Mechanics*, version 1.0.0. https://github.com/mi99at/physics-gnn-symbolic-discovery
+> Md Minnatullah (2026). *Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics*, version 1.0.0. https://github.com/mi99at/physics-gnn-symbolic-discovery
 
 ## License
 
