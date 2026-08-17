@@ -6,5 +6,8 @@ authors:
   - family-names: Minnatullah
     given-names: Md
     email: mdminnatullah970@gmail.com
-repository-code: "https://github.com/[GitHub-username]/solve-mine-prove"
+repository-code: "https://github.com/mi99at/physics-gnn-symbolic-discovery"
 abstract: "A reproducible, self-auditing graph-neural-network benchmark for route learning and relation mining in a closed classical-mechanics corpus."
+version: "1.0.0"
+date-released: 2026-08-18
+license: MIT

@@ -42,8 +42,14 @@ The full training run is GPU-oriented. `python gnn_trainer_v9.py --smoke` is a s
 
 ## Publication status
 
-The complete 400-candidate discovery screen and matching catalog are tracked in this repository. Before the public tag, the large scenario arrays and checkpoints will be deposited in a versioned archival release. See `RESULTS_STATUS.md` and `ARTIFACTS.md`.
+The complete 400-candidate discovery screen and matching catalog are tracked in this repository. The large scenario arrays and checkpoints are attached to the [v1.0.0 release](https://github.com/mi99at/physics-gnn-symbolic-discovery/releases/tag/v1.0.0), with checksums in `ARTIFACTS.md`. See `RESULTS_STATUS.md` for the audit boundary and verified results.
 
 ## Citation
 
-Citation information will be added with the first public release.
+Please cite the software metadata in `CITATION.cff`:
+
+> Md Minnatullah (2026). *Solve, Mine, Prove: A Self-Auditing Graph Neural Network for Classical Mechanics*, version 1.0.0. https://github.com/mi99at/physics-gnn-symbolic-discovery
+
+## License
+
+Source code is available under the MIT License. The paper, generated data, model checkpoints, and other research artifacts are available under CC BY 4.0; see `LICENSE-DATA.md`.

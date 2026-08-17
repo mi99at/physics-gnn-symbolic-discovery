@@ -18,4 +18,4 @@ SHA-256 checksums:
 - `catalog_v1.json`: `a0d822c081987f318ea52cf4cfb3d0ee073ddd1560d9253b754ee383a126ff9a`
 - `discoveries_v1.json`: `f985ca912e9d2be32eb125eb6dcd9015a1b97341a8f9355755b3a854019545f3`
 
-The public release still needs the large scenario arrays and archived checkpoints deposited in a versioned record. This distinction keeps every reported result traceable to a file and a command.
+The large scenario arrays and archived checkpoints are attached to the versioned GitHub `v1.0.0` release, with their SHA-256 checksums recorded in `ARTIFACTS.md`. A later Zenodo mirror can add a DOI without changing this release's files.
