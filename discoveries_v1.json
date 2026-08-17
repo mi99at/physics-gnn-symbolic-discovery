@@ -1,0 +1,3330 @@
+{
+ "controls": {
+  "pos": 2,
+  "neg": 6
+ },
+ "candidates": [
+  {
+   "A": "Q_v_esc",
+   "B": "Q_F_grav",
+   "k": 2.705,
+   "logic": "POWER k=+2.71",
+   "linearity": 0.991,
+   "effect": 1.638,
+   "k_context": 0.242,
+   "ctx_iqr": 0.591,
+   "k_data": 2.556,
+   "r2_data": 0.769,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_F_grav",
+   "k": 2.691,
+   "logic": "POWER k=+2.69",
+   "linearity": 0.989,
+   "effect": 1.627,
+   "k_context": 0.182,
+   "ctx_iqr": 0.734,
+   "k_data": 2.556,
+   "r2_data": 0.769,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_g_field",
+   "k": 2.671,
+   "logic": "POWER k=+2.67",
+   "linearity": 0.994,
+   "effect": 1.609,
+   "k_context": 0.53,
+   "ctx_iqr": 0.846,
+   "k_data": 2.561,
+   "r2_data": 0.888,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_g_field",
+   "k": 2.664,
+   "logic": "POWER k=+2.66",
+   "linearity": 0.993,
+   "effect": 1.605,
+   "k_context": 1.0,
+   "ctx_iqr": 0.774,
+   "k_data": 2.561,
+   "r2_data": 0.888,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_PE_orb",
+   "k": 1.989,
+   "logic": "SQUARE",
+   "linearity": 0.996,
+   "effect": 1.174,
+   "k_context": 0.606,
+   "ctx_iqr": 1.095,
+   "k_data": 1.995,
+   "r2_data": 0.778,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_PE_orb",
+   "k": 1.975,
+   "logic": "SQUARE",
+   "linearity": 0.995,
+   "effect": 1.162,
+   "k_context": 0.695,
+   "ctx_iqr": 0.804,
+   "k_data": 1.995,
+   "r2_data": 0.778,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_E_orb",
+   "k": 1.942,
+   "logic": "SQUARE",
+   "linearity": 0.994,
+   "effect": 1.145,
+   "k_context": 0.566,
+   "ctx_iqr": 1.251,
+   "k_data": 1.995,
+   "r2_data": 0.778,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_E_orb",
+   "k": 1.933,
+   "logic": "SQUARE",
+   "linearity": 0.993,
+   "effect": 1.135,
+   "k_context": 0.623,
+   "ctx_iqr": 0.974,
+   "k_data": 1.995,
+   "r2_data": 0.778,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_T_orb",
+   "k": -1.628,
+   "logic": "POWER k=-1.63",
+   "linearity": 0.988,
+   "effect": 0.997,
+   "k_context": -0.419,
+   "ctx_iqr": 0.84,
+   "k_data": -1.561,
+   "r2_data": 0.747,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_T_orb",
+   "k": -1.616,
+   "logic": "POWER k=-1.62",
+   "linearity": 0.987,
+   "effect": 0.991,
+   "k_context": -0.489,
+   "ctx_iqr": 0.743,
+   "k_data": -1.561,
+   "r2_data": 0.747,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_a_max",
+   "k": 1.515,
+   "logic": "POWER k=+1.51",
+   "linearity": 0.998,
+   "effect": 0.925,
+   "k_context": 0.096,
+   "ctx_iqr": 0.367,
+   "k_data": 1.514,
+   "r2_data": 0.9,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_T_orb",
+   "B": "Q_g_field",
+   "k": -1.459,
+   "logic": "POWER k=-1.46",
+   "linearity": 0.998,
+   "effect": 0.911,
+   "k_context": -0.709,
+   "ctx_iqr": 0.423,
+   "k_data": -1.479,
+   "r2_data": 0.966,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_T_orb",
+   "B": "Q_F_grav",
+   "k": -1.458,
+   "logic": "POWER k=-1.46",
+   "linearity": 0.999,
+   "effect": 0.896,
+   "k_context": -0.372,
+   "ctx_iqr": 0.595,
+   "k_data": -1.476,
+   "r2_data": 0.837,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_E_shm",
+   "k": 1.489,
+   "logic": "POWER k=+1.49",
+   "linearity": 0.994,
+   "effect": 0.835,
+   "k_context": 0.175,
+   "ctx_iqr": 0.923,
+   "k_data": 1.538,
+   "r2_data": 0.765,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_E_orb",
+   "B": "Q_F_grav",
+   "k": 1.416,
+   "logic": "POWER k=+1.42",
+   "linearity": 0.991,
+   "effect": 0.811,
+   "k_context": 0.048,
+   "ctx_iqr": 0.183,
+   "k_data": 1.219,
+   "r2_data": 0.895,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_ac",
+   "k": 1.561,
+   "logic": "POWER k=+1.56",
+   "linearity": 0.934,
+   "effect": 0.852,
+   "k_context": 0.32,
+   "ctx_iqr": 1.287,
+   "k_data": 1.993,
+   "r2_data": 0.777,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_PE_orb",
+   "B": "Q_F_grav",
+   "k": 1.41,
+   "logic": "POWER k=+1.41",
+   "linearity": 0.992,
+   "effect": 0.793,
+   "k_context": 0.06,
+   "ctx_iqr": 0.292,
+   "k_data": 1.219,
+   "r2_data": 0.895,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_a_max",
+   "k": 1.545,
+   "logic": "POWER k=+1.55",
+   "linearity": 0.939,
+   "effect": 0.814,
+   "k_context": 0.031,
+   "ctx_iqr": 0.038,
+   "k_data": 1.992,
+   "r2_data": 0.808,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_a_shm",
+   "k": 1.332,
+   "logic": "POWER k=+1.33",
+   "linearity": 0.995,
+   "effect": 0.764,
+   "k_context": 0.048,
+   "ctx_iqr": 0.035,
+   "k_data": 1.516,
+   "r2_data": 0.838,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_PE_orb",
+   "k": 1.387,
+   "logic": "POWER k=+1.39",
+   "linearity": 0.981,
+   "effect": 0.764,
+   "k_context": 0.01,
+   "ctx_iqr": 0.024,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_KE_rot",
+   "k": 1.216,
+   "logic": "POWER k=+1.22",
+   "linearity": 0.988,
+   "effect": 0.754,
+   "k_context": 0.008,
+   "ctx_iqr": 0.025,
+   "k_data": 1.259,
+   "r2_data": 0.893,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_E_orb",
+   "B": "Q_g_field",
+   "k": 1.223,
+   "logic": "POWER k=+1.22",
+   "linearity": 0.996,
+   "effect": 0.72,
+   "k_context": 0.009,
+   "ctx_iqr": 0.061,
+   "k_data": 0.998,
+   "r2_data": 0.691,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_PE_orb",
+   "k": 1.35,
+   "logic": "POWER k=+1.35",
+   "linearity": 0.978,
+   "effect": 0.733,
+   "k_context": 0.011,
+   "ctx_iqr": 0.01,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_PE_orb",
+   "k": 1.35,
+   "logic": "POWER k=+1.35",
+   "linearity": 0.977,
+   "effect": 0.733,
+   "k_context": 0.011,
+   "ctx_iqr": 0.01,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_PE_orb",
+   "B": "Q_g_field",
+   "k": 1.22,
+   "logic": "POWER k=+1.22",
+   "linearity": 0.997,
+   "effect": 0.708,
+   "k_context": -0.022,
+   "ctx_iqr": 0.059,
+   "k_data": 0.998,
+   "r2_data": 0.691,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_F_grav",
+   "k": 1.24,
+   "logic": "POWER k=+1.24",
+   "linearity": 0.988,
+   "effect": 0.708,
+   "k_context": 0.009,
+   "ctx_iqr": 0.011,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_F_grav",
+   "k": 1.239,
+   "logic": "POWER k=+1.24",
+   "linearity": 0.988,
+   "effect": 0.707,
+   "k_context": 0.009,
+   "ctx_iqr": 0.011,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_E_orb",
+   "k": 1.285,
+   "logic": "POWER k=+1.29",
+   "linearity": 0.983,
+   "effect": 0.708,
+   "k_context": 0.003,
+   "ctx_iqr": 0.008,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_a_max",
+   "k": 1.21,
+   "logic": "POWER k=+1.21",
+   "linearity": 0.996,
+   "effect": 0.694,
+   "k_context": 0.026,
+   "ctx_iqr": 0.11,
+   "k_data": 1.269,
+   "r2_data": 0.753,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_E_orb",
+   "k": 1.258,
+   "logic": "POWER k=+1.26",
+   "linearity": 0.979,
+   "effect": 0.685,
+   "k_context": 0.005,
+   "ctx_iqr": 0.009,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_E_orb",
+   "k": 1.258,
+   "logic": "POWER k=+1.26",
+   "linearity": 0.979,
+   "effect": 0.684,
+   "k_context": 0.005,
+   "ctx_iqr": 0.009,
+   "k_data": null,
+   "r2_data": null,
+   "cross_domain": true
+  },
+  {
+   "A": "Q_T_period",
+   "B": "Q_a_max",
+   "k": -1.399,
+   "logic": "POWER k=-1.40",
+   "linearity": 0.932,
+   "effect": 0.717,
+   "k_context": -0.051,
+   "ctx_iqr": 0.117,
+   "k_data": -1.992,
+   "r2_data": 0.808,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_F_spr",
+   "B": "Q_PE_spr",
+   "k": 1.125,
+   "logic": "POWER k=+1.13",
+   "linearity": 0.999,
+   "effect": 0.658,
+   "k_context": 0.878,
+   "ctx_iqr": 0.689,
+   "k_data": 1.371,
+   "r2_data": 0.89,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_KE_rot",
+   "k": 1.26,
+   "logic": "POWER k=+1.26",
+   "linearity": 0.977,
+   "effect": 0.668,
+   "k_context": 0.009,
+   "ctx_iqr": 0.045,
+   "k_data": 1.813,
+   "r2_data": 0.772,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_E_orb",
+   "B": "Q_PE_orb",
+   "k": 1.16,
+   "logic": "POWER k=+1.16",
+   "linearity": 0.989,
+   "effect": 0.655,
+   "k_context": 0.215,
+   "ctx_iqr": 0.696,
+   "k_data": 1.0,
+   "r2_data": 1.0,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_a_max",
+   "k": 1.049,
+   "logic": "LINEAR",
+   "linearity": 0.994,
+   "effect": 0.651,
+   "k_context": 0.021,
+   "ctx_iqr": 0.054,
+   "k_data": 0.93,
+   "r2_data": 0.931,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_KE_roll",
+   "k": 1.141,
+   "logic": "POWER k=+1.14",
+   "linearity": 0.982,
+   "effect": 0.658,
+   "k_context": 0.003,
+   "ctx_iqr": 0.009,
+   "k_data": 1.259,
+   "r2_data": 0.893,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_KE_roll",
+   "k": 1.213,
+   "logic": "POWER k=+1.21",
+   "linearity": 0.871,
+   "effect": 0.72,
+   "k_context": -0.009,
+   "ctx_iqr": 0.136,
+   "k_data": 2.005,
+   "r2_data": 0.584,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_E_shm",
+   "k": 1.001,
+   "logic": "LINEAR",
+   "linearity": 0.986,
+   "effect": 0.634,
+   "k_context": 0.031,
+   "ctx_iqr": 0.462,
+   "k_data": 0.823,
+   "r2_data": 0.558,
+   "cross_domain": false
+  },
+  {
+   "A": "Q_PE_orb",
+   "B": "Q_E_orb",
+   "k": 1.107,
+   "logic": "LINEAR",
+   "linearity": 0.99,
+   "effect": 0.618,
+   "k_context": 0.099,
+   "ctx_iqr": 0.591,
+   "k_data": 1.0,
+   "r2_data": 1.0,
+   "cross_domain": false
+  }
+ ],
+ "all_scores": [
+  {
+   "A": "Q_v_esc",
+   "B": "Q_F_grav",
+   "k": 2.705,
+   "eff": 1.638,
+   "lin": 0.991
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_F_grav",
+   "k": 2.691,
+   "eff": 1.627,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_g_field",
+   "k": 2.671,
+   "eff": 1.609,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_g_field",
+   "k": 2.664,
+   "eff": 1.605,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_PE_orb",
+   "k": 1.989,
+   "eff": 1.174,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_PE_orb",
+   "k": 1.975,
+   "eff": 1.162,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_E_orb",
+   "k": 1.942,
+   "eff": 1.145,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_E_orb",
+   "k": 1.933,
+   "eff": 1.135,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_T_orb",
+   "k": -1.628,
+   "eff": 0.997,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_T_orb",
+   "k": -1.616,
+   "eff": 0.991,
+   "lin": 0.987
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_a_max",
+   "k": 1.515,
+   "eff": 0.925,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_T_orb",
+   "B": "Q_g_field",
+   "k": -1.459,
+   "eff": 0.911,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_T_orb",
+   "B": "Q_F_grav",
+   "k": -1.458,
+   "eff": 0.896,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_E_shm",
+   "k": 1.489,
+   "eff": 0.835,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_E_orb",
+   "B": "Q_F_grav",
+   "k": 1.416,
+   "eff": 0.811,
+   "lin": 0.991
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_ac",
+   "k": 1.561,
+   "eff": 0.852,
+   "lin": 0.934
+  },
+  {
+   "A": "Q_PE_orb",
+   "B": "Q_F_grav",
+   "k": 1.41,
+   "eff": 0.793,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_a_max",
+   "k": 1.545,
+   "eff": 0.814,
+   "lin": 0.939
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_a_shm",
+   "k": 1.332,
+   "eff": 0.764,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_PE_orb",
+   "k": 1.387,
+   "eff": 0.764,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_KE_rot",
+   "k": 1.216,
+   "eff": 0.754,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_E_orb",
+   "B": "Q_g_field",
+   "k": 1.223,
+   "eff": 0.72,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_PE_orb",
+   "k": 1.35,
+   "eff": 0.733,
+   "lin": 0.978
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_PE_orb",
+   "k": 1.35,
+   "eff": 0.733,
+   "lin": 0.977
+  },
+  {
+   "A": "Q_PE_orb",
+   "B": "Q_g_field",
+   "k": 1.22,
+   "eff": 0.708,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_F_grav",
+   "k": 1.24,
+   "eff": 0.708,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_F_grav",
+   "k": 1.239,
+   "eff": 0.707,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_E_orb",
+   "k": 1.285,
+   "eff": 0.708,
+   "lin": 0.983
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_a_max",
+   "k": 1.21,
+   "eff": 0.694,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_E_orb",
+   "k": 1.258,
+   "eff": 0.685,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_E_orb",
+   "k": 1.258,
+   "eff": 0.684,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_T_period",
+   "B": "Q_a_max",
+   "k": -1.399,
+   "eff": 0.717,
+   "lin": 0.932
+  },
+  {
+   "A": "Q_F_spr",
+   "B": "Q_PE_spr",
+   "k": 1.125,
+   "eff": 0.658,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_KE_rot",
+   "k": 1.26,
+   "eff": 0.668,
+   "lin": 0.977
+  },
+  {
+   "A": "Q_E_orb",
+   "B": "Q_PE_orb",
+   "k": 1.16,
+   "eff": 0.655,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_a_max",
+   "k": 1.049,
+   "eff": 0.651,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_KE_roll",
+   "k": 1.141,
+   "eff": 0.658,
+   "lin": 0.982
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_KE_roll",
+   "k": 1.213,
+   "eff": 0.72,
+   "lin": 0.871
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_E_shm",
+   "k": 1.001,
+   "eff": 0.634,
+   "lin": 0.986
+  },
+  {
+   "A": "Q_PE_orb",
+   "B": "Q_E_orb",
+   "k": 1.107,
+   "eff": 0.618,
+   "lin": 0.99
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_KE",
+   "k": 1.066,
+   "eff": 0.618,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_h_cap",
+   "B": "Q_v_term",
+   "k": -1.212,
+   "eff": 0.685,
+   "lin": 0.89
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_phi",
+   "k": 1.23,
+   "eff": 0.643,
+   "lin": 0.946
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_a_shm",
+   "k": 1.114,
+   "eff": 0.615,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_a_max",
+   "k": 0.987,
+   "eff": 0.613,
+   "lin": 0.99
+  },
+  {
+   "A": "Q_v_esc",
+   "B": "Q_v_orb",
+   "k": 1.031,
+   "eff": 0.605,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_dKE",
+   "B": "Q_dE_mech",
+   "k": 1.017,
+   "eff": 0.602,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_dE_mech",
+   "B": "Q_dKE",
+   "k": 1.017,
+   "eff": 0.602,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_a_max",
+   "k": 1.076,
+   "eff": 0.6,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_a_tot",
+   "k": 1.16,
+   "eff": 0.623,
+   "lin": 0.955
+  },
+  {
+   "A": "Q_v_orb",
+   "B": "Q_v_esc",
+   "k": 1.01,
+   "eff": 0.596,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_phi",
+   "B": "Q_a_max",
+   "k": 1.064,
+   "eff": 0.604,
+   "lin": 0.983
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_a_shm",
+   "k": 1.008,
+   "eff": 0.591,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_dL",
+   "k": 0.969,
+   "eff": 0.587,
+   "lin": 0.991
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_PE_orb",
+   "k": 0.992,
+   "eff": 0.592,
+   "lin": 0.98
+  },
+  {
+   "A": "Q_I_rot",
+   "B": "Q_dL",
+   "k": 0.958,
+   "eff": 0.582,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_L_pend",
+   "k": -1.216,
+   "eff": 0.635,
+   "lin": 0.906
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_L_ang",
+   "k": 1.054,
+   "eff": 0.583,
+   "lin": 0.987
+  },
+  {
+   "A": "Q_v_pi",
+   "B": "Q_p_tot",
+   "k": 1.075,
+   "eff": 0.59,
+   "lin": 0.963
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_KE",
+   "k": 0.904,
+   "eff": 0.579,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_KE_roll",
+   "B": "Q_L_ang",
+   "k": 1.006,
+   "eff": 0.565,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_phi",
+   "k": 0.887,
+   "eff": 0.564,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_I_rot",
+   "B": "Q_KE_roll",
+   "k": 0.853,
+   "eff": 0.562,
+   "lin": 0.985
+  },
+  {
+   "A": "Q_Q_flow",
+   "B": "Q_P_rad",
+   "k": 0.943,
+   "eff": 0.55,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_v_cm",
+   "B": "Q_p_tot",
+   "k": 1.053,
+   "eff": 0.565,
+   "lin": 0.96
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_E_orb",
+   "k": 0.908,
+   "eff": 0.546,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_E_orb",
+   "k": 0.929,
+   "eff": 0.548,
+   "lin": 0.985
+  },
+  {
+   "A": "Q_k_spr",
+   "B": "Q_a_max",
+   "k": 0.933,
+   "eff": 0.539,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_L_ang",
+   "k": 0.918,
+   "eff": 0.539,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_E_shm",
+   "k": 0.857,
+   "eff": 0.543,
+   "lin": 0.987
+  },
+  {
+   "A": "Q_T_orb",
+   "B": "Q_PE_orb",
+   "k": -0.831,
+   "eff": 0.541,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_I2",
+   "B": "Q_dL",
+   "k": 0.97,
+   "eff": 0.536,
+   "lin": 0.991
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_ac",
+   "k": 1.141,
+   "eff": 0.569,
+   "lin": 0.933
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_W_wt",
+   "k": 0.929,
+   "eff": 0.532,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_F_buoy",
+   "B": "Q_m",
+   "k": 0.941,
+   "eff": 0.533,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_W_wt",
+   "k": 0.929,
+   "eff": 0.532,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_Q_flow",
+   "B": "Q_P_cond",
+   "k": 0.919,
+   "eff": 0.532,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_I2",
+   "B": "Q_KE_rot",
+   "k": 0.983,
+   "eff": 0.538,
+   "lin": 0.982
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_a_shm",
+   "k": 1.126,
+   "eff": 0.598,
+   "lin": 0.882
+  },
+  {
+   "A": "Q_I2",
+   "B": "Q_tau",
+   "k": 0.924,
+   "eff": 0.529,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_alpha",
+   "B": "Q_dL",
+   "k": 0.853,
+   "eff": 0.531,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_PE_g",
+   "k": 0.936,
+   "eff": 0.53,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_T_orb",
+   "B": "Q_E_orb",
+   "k": -0.82,
+   "eff": 0.531,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_v_shm",
+   "k": 0.907,
+   "eff": 0.524,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_P_rad",
+   "k": 0.991,
+   "eff": 0.56,
+   "lin": 0.928
+  },
+  {
+   "A": "Q_d",
+   "B": "Q_dKE",
+   "k": 0.912,
+   "eff": 0.521,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_d",
+   "B": "Q_dE_mech",
+   "k": 0.912,
+   "eff": 0.521,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_F_grav",
+   "k": 0.846,
+   "eff": 0.524,
+   "lin": 0.986
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_a_shm",
+   "k": 0.893,
+   "eff": 0.52,
+   "lin": 0.985
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_PE_g",
+   "k": 0.911,
+   "eff": 0.516,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_PE_g",
+   "k": 0.91,
+   "eff": 0.516,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_phi",
+   "k": 0.818,
+   "eff": 0.522,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_L_pend",
+   "B": "Q_a_max",
+   "k": -1.003,
+   "eff": 0.527,
+   "lin": 0.968
+  },
+  {
+   "A": "Q_r",
+   "B": "Q_I2",
+   "k": 0.998,
+   "eff": 0.529,
+   "lin": 0.964
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_L_pend",
+   "k": -0.979,
+   "eff": 0.522,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_L_pend",
+   "k": -1.147,
+   "eff": 0.576,
+   "lin": 0.883
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_ac",
+   "k": 0.929,
+   "eff": 0.515,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_ac",
+   "k": 0.825,
+   "eff": 0.528,
+   "lin": 0.956
+  },
+  {
+   "A": "Q_L_lat",
+   "B": "Q_c_spec",
+   "k": 0.938,
+   "eff": 0.519,
+   "lin": 0.972
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_ac",
+   "k": 0.833,
+   "eff": 0.508,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_KE_roll",
+   "k": 0.819,
+   "eff": 0.52,
+   "lin": 0.97
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_L_pend",
+   "k": -0.887,
+   "eff": 0.507,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_KE_rot",
+   "k": 0.894,
+   "eff": 0.515,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_dL",
+   "k": 0.835,
+   "eff": 0.502,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_L_lat",
+   "k": -0.92,
+   "eff": 0.513,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_J_imp",
+   "k": 0.858,
+   "eff": 0.513,
+   "lin": 0.974
+  },
+  {
+   "A": "Q_k_spr",
+   "B": "Q_L_pend",
+   "k": -0.969,
+   "eff": 0.51,
+   "lin": 0.974
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_N_incl",
+   "k": 0.888,
+   "eff": 0.502,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_F_incl",
+   "k": 0.888,
+   "eff": 0.502,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_L_ang",
+   "k": 0.995,
+   "eff": 0.515,
+   "lin": 0.964
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_dE_mech",
+   "k": 0.879,
+   "eff": 0.498,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_r",
+   "B": "Q_dL",
+   "k": 0.881,
+   "eff": 0.511,
+   "lin": 0.966
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_dKE",
+   "k": 0.879,
+   "eff": 0.498,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_v_max",
+   "B": "Q_KE_roll",
+   "k": 0.845,
+   "eff": 0.526,
+   "lin": 0.937
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_P_cond",
+   "k": 0.941,
+   "eff": 0.543,
+   "lin": 0.903
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_KE_roll",
+   "k": 0.99,
+   "eff": 0.534,
+   "lin": 0.912
+  },
+  {
+   "A": "Q_ux",
+   "B": "Q_R_range",
+   "k": 0.962,
+   "eff": 0.525,
+   "lin": 0.924
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_L_pend",
+   "k": -0.858,
+   "eff": 0.486,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_L_ang",
+   "k": 0.923,
+   "eff": 0.492,
+   "lin": 0.98
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_F_grav",
+   "k": 0.785,
+   "eff": 0.486,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_T_flight",
+   "B": "Q_H_max",
+   "k": 1.058,
+   "eff": 0.537,
+   "lin": 0.891
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_N_incl",
+   "k": 0.865,
+   "eff": 0.484,
+   "lin": 0.986
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_F_incl",
+   "k": 0.864,
+   "eff": 0.483,
+   "lin": 0.986
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_L_lat",
+   "k": -0.882,
+   "eff": 0.488,
+   "lin": 0.972
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_L_lat",
+   "k": -0.881,
+   "eff": 0.487,
+   "lin": 0.972
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_c_spec",
+   "k": -0.838,
+   "eff": 0.476,
+   "lin": 0.987
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_L_pend",
+   "k": -0.888,
+   "eff": 0.484,
+   "lin": 0.97
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_KE_rot",
+   "k": 1.001,
+   "eff": 0.546,
+   "lin": 0.858
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_tau",
+   "k": 0.766,
+   "eff": 0.468,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_KE_rot",
+   "k": 0.885,
+   "eff": 0.485,
+   "lin": 0.964
+  },
+  {
+   "A": "Q_E_orb",
+   "B": "Q_T_orb",
+   "k": -0.813,
+   "eff": 0.469,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_J_imp",
+   "B": "Q_dL",
+   "k": 0.816,
+   "eff": 0.477,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_PE_orb",
+   "B": "Q_T_orb",
+   "k": -0.829,
+   "eff": 0.469,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_KE_roll",
+   "B": "Q_a_max",
+   "k": 0.806,
+   "eff": 0.467,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_phi",
+   "k": 0.85,
+   "eff": 0.475,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_L_pend",
+   "k": 0.751,
+   "eff": 0.472,
+   "lin": 0.984
+  },
+  {
+   "A": "Q_T_period",
+   "B": "Q_a_shm",
+   "k": -0.966,
+   "eff": 0.564,
+   "lin": 0.822
+  },
+  {
+   "A": "Q_om2",
+   "B": "Q_a_max",
+   "k": 0.986,
+   "eff": 0.529,
+   "lin": 0.873
+  },
+  {
+   "A": "Q_I_rot",
+   "B": "Q_v_term",
+   "k": 1.031,
+   "eff": 0.576,
+   "lin": 0.801
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_L_ang",
+   "k": 0.884,
+   "eff": 0.47,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_L_ang",
+   "k": 0.884,
+   "eff": 0.47,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_J_imp",
+   "B": "Q_P_pow",
+   "k": 0.824,
+   "eff": 0.473,
+   "lin": 0.968
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_p",
+   "k": 0.852,
+   "eff": 0.468,
+   "lin": 0.974
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_a_tot",
+   "k": 1.012,
+   "eff": 0.526,
+   "lin": 0.867
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_a_shm",
+   "k": 0.844,
+   "eff": 0.464,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_h_cap",
+   "B": "Q_L_ang",
+   "k": -0.896,
+   "eff": 0.498,
+   "lin": 0.914
+  },
+  {
+   "A": "Q_sigma_s",
+   "B": "Q_v_term",
+   "k": -0.982,
+   "eff": 0.502,
+   "lin": 0.905
+  },
+  {
+   "A": "Q_U_int",
+   "B": "Q_W_th",
+   "k": 0.829,
+   "eff": 0.464,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_r",
+   "B": "Q_a_tot",
+   "k": 0.794,
+   "eff": 0.458,
+   "lin": 0.991
+  },
+  {
+   "A": "Q_uy",
+   "B": "Q_R_range",
+   "k": 0.915,
+   "eff": 0.489,
+   "lin": 0.928
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_ac",
+   "k": 1.032,
+   "eff": 0.526,
+   "lin": 0.86
+  },
+  {
+   "A": "Q_c_spec",
+   "B": "Q_L_lat",
+   "k": 0.797,
+   "eff": 0.456,
+   "lin": 0.991
+  },
+  {
+   "A": "Q_om2",
+   "B": "Q_L_pend",
+   "k": -0.996,
+   "eff": 0.486,
+   "lin": 0.927
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_W_wt",
+   "k": 0.735,
+   "eff": 0.45,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_a_max",
+   "k": 0.784,
+   "eff": 0.45,
+   "lin": 0.99
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_phi",
+   "k": 0.744,
+   "eff": 0.446,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_KE_roll",
+   "k": 0.747,
+   "eff": 0.475,
+   "lin": 0.936
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_L_pend",
+   "k": -0.902,
+   "eff": 0.464,
+   "lin": 0.954
+  },
+  {
+   "A": "Q_T_period",
+   "B": "Q_phi",
+   "k": -0.892,
+   "eff": 0.56,
+   "lin": 0.789
+  },
+  {
+   "A": "Q_d_axis",
+   "B": "Q_L_ang",
+   "k": 1.087,
+   "eff": 0.509,
+   "lin": 0.869
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_E_shm",
+   "k": 0.813,
+   "eff": 0.461,
+   "lin": 0.958
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_dp",
+   "k": 0.774,
+   "eff": 0.449,
+   "lin": 0.982
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_c_spec",
+   "k": -0.802,
+   "eff": 0.448,
+   "lin": 0.985
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_c_spec",
+   "k": -0.803,
+   "eff": 0.448,
+   "lin": 0.985
+  },
+  {
+   "A": "Q_KE_rot",
+   "B": "Q_L_ang",
+   "k": 0.771,
+   "eff": 0.443,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_k_spr",
+   "B": "Q_phi",
+   "k": 0.706,
+   "eff": 0.455,
+   "lin": 0.969
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_p",
+   "k": 0.823,
+   "eff": 0.453,
+   "lin": 0.972
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_p",
+   "k": 0.822,
+   "eff": 0.453,
+   "lin": 0.972
+  },
+  {
+   "A": "Q_W_th",
+   "B": "Q_c_spec",
+   "k": 0.848,
+   "eff": 0.448,
+   "lin": 0.978
+  },
+  {
+   "A": "Q_W_th",
+   "B": "Q_L_lat",
+   "k": 0.845,
+   "eff": 0.447,
+   "lin": 0.975
+  },
+  {
+   "A": "Q_v_avg",
+   "B": "Q_KE",
+   "k": 0.901,
+   "eff": 0.504,
+   "lin": 0.863
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_v_max",
+   "k": 0.771,
+   "eff": 0.437,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_dKE",
+   "k": 0.726,
+   "eff": 0.434,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_dE_mech",
+   "k": 0.726,
+   "eff": 0.434,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_phi",
+   "B": "Q_L_pend",
+   "k": -0.847,
+   "eff": 0.458,
+   "lin": 0.947
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_Q_flow",
+   "k": 0.86,
+   "eff": 0.463,
+   "lin": 0.935
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_p",
+   "k": 0.731,
+   "eff": 0.433,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_phi",
+   "B": "Q_a_shm",
+   "k": 0.825,
+   "eff": 0.442,
+   "lin": 0.973
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_KE_roll",
+   "k": 0.734,
+   "eff": 0.435,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_phi",
+   "k": 0.719,
+   "eff": 0.431,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_f_obs",
+   "k": 0.844,
+   "eff": 0.443,
+   "lin": 0.965
+  },
+  {
+   "A": "Q_dp",
+   "B": "Q_P_pow",
+   "k": 0.782,
+   "eff": 0.433,
+   "lin": 0.98
+  },
+  {
+   "A": "Q_om2",
+   "B": "Q_ac",
+   "k": 0.91,
+   "eff": 0.492,
+   "lin": 0.86
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_dp",
+   "k": 0.823,
+   "eff": 0.439,
+   "lin": 0.962
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_I_rot",
+   "k": 0.833,
+   "eff": 0.437,
+   "lin": 0.964
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_KE_rot",
+   "k": 0.69,
+   "eff": 0.42,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_PE_g",
+   "k": 0.679,
+   "eff": 0.42,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_Q_flow",
+   "B": "Q_F",
+   "k": 0.8,
+   "eff": 0.43,
+   "lin": 0.968
+  },
+  {
+   "A": "Q_F_grav",
+   "B": "Q_T_orb",
+   "k": -0.704,
+   "eff": 0.418,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_om2",
+   "B": "Q_phi",
+   "k": 0.841,
+   "eff": 0.461,
+   "lin": 0.902
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_KE_rot",
+   "k": 0.686,
+   "eff": 0.421,
+   "lin": 0.983
+  },
+  {
+   "A": "Q_W_work",
+   "B": "Q_J_imp",
+   "k": 0.672,
+   "eff": 0.415,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_PE_spr",
+   "B": "Q_F_spr",
+   "k": 0.68,
+   "eff": 0.414,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_I2",
+   "k": 0.646,
+   "eff": 0.431,
+   "lin": 0.958
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_s",
+   "k": 0.7,
+   "eff": 0.421,
+   "lin": 0.98
+  },
+  {
+   "A": "Q_E_shm",
+   "B": "Q_a_max",
+   "k": 0.69,
+   "eff": 0.413,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_v_max",
+   "k": 0.671,
+   "eff": 0.414,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_J_imp",
+   "B": "Q_W_work",
+   "k": 0.666,
+   "eff": 0.418,
+   "lin": 0.984
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_W_wt",
+   "k": 0.709,
+   "eff": 0.412,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_L_pend",
+   "k": -0.748,
+   "eff": 0.416,
+   "lin": 0.987
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_J_imp",
+   "k": 0.802,
+   "eff": 0.433,
+   "lin": 0.946
+  },
+  {
+   "A": "Q_phi",
+   "B": "Q_ac",
+   "k": 0.821,
+   "eff": 0.435,
+   "lin": 0.94
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_L_lat",
+   "k": -0.698,
+   "eff": 0.409,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_J_imp",
+   "k": 0.668,
+   "eff": 0.425,
+   "lin": 0.961
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_J_imp",
+   "k": 0.79,
+   "eff": 0.425,
+   "lin": 0.958
+  },
+  {
+   "A": "Q_ac",
+   "B": "Q_a_max",
+   "k": 0.754,
+   "eff": 0.421,
+   "lin": 0.967
+  },
+  {
+   "A": "Q_v_term",
+   "B": "Q_L_ang",
+   "k": 0.746,
+   "eff": 0.416,
+   "lin": 0.978
+  },
+  {
+   "A": "Q_dL",
+   "B": "Q_I_rot",
+   "k": 0.627,
+   "eff": 0.41,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_KE_rot",
+   "B": "Q_L_pend",
+   "k": -0.673,
+   "eff": 0.406,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_I2",
+   "k": 0.701,
+   "eff": 0.406,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_sigma_s",
+   "B": "Q_P_cond",
+   "k": -0.79,
+   "eff": 0.418,
+   "lin": 0.966
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_KE_rot",
+   "k": 0.658,
+   "eff": 0.405,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_E_mech",
+   "k": 0.647,
+   "eff": 0.404,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_t",
+   "B": "Q_dE_mech",
+   "k": 0.72,
+   "eff": 0.406,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_t",
+   "B": "Q_dKE",
+   "k": 0.72,
+   "eff": 0.406,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_N_incl",
+   "k": 0.687,
+   "eff": 0.402,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_F_incl",
+   "k": 0.687,
+   "eff": 0.402,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_y_wave",
+   "B": "Q_E_shm",
+   "k": 0.787,
+   "eff": 0.455,
+   "lin": 0.879
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_phi",
+   "k": 0.664,
+   "eff": 0.403,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_dS",
+   "B": "Q_c_spec",
+   "k": 0.776,
+   "eff": 0.41,
+   "lin": 0.974
+  },
+  {
+   "A": "Q_H_max",
+   "B": "Q_y",
+   "k": 0.777,
+   "eff": 0.421,
+   "lin": 0.949
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_p",
+   "k": 0.777,
+   "eff": 0.41,
+   "lin": 0.971
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_I_rot",
+   "k": 0.794,
+   "eff": 0.413,
+   "lin": 0.957
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_I_rot",
+   "k": 0.793,
+   "eff": 0.413,
+   "lin": 0.957
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_c_spec",
+   "k": -0.649,
+   "eff": 0.397,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_v0",
+   "B": "Q_H_max",
+   "k": 0.892,
+   "eff": 0.444,
+   "lin": 0.887
+  },
+  {
+   "A": "Q_L_pend",
+   "B": "Q_a_shm",
+   "k": -0.806,
+   "eff": 0.414,
+   "lin": 0.95
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_I_rot",
+   "k": 0.662,
+   "eff": 0.396,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_T_flight",
+   "B": "Q_y",
+   "k": 0.923,
+   "eff": 0.446,
+   "lin": 0.881
+  },
+  {
+   "A": "Q_dS",
+   "B": "Q_L_lat",
+   "k": 0.765,
+   "eff": 0.404,
+   "lin": 0.969
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_KE_rot",
+   "k": 0.784,
+   "eff": 0.438,
+   "lin": 0.892
+  },
+  {
+   "A": "Q_g_field",
+   "B": "Q_PE_orb",
+   "k": 0.642,
+   "eff": 0.391,
+   "lin": 1.0
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_L_pend",
+   "k": -0.655,
+   "eff": 0.397,
+   "lin": 0.985
+  },
+  {
+   "A": "Q_y",
+   "B": "Q_H_max",
+   "k": 0.74,
+   "eff": 0.409,
+   "lin": 0.953
+  },
+  {
+   "A": "Q_sigma_s",
+   "B": "Q_h_cap",
+   "k": 0.727,
+   "eff": 0.396,
+   "lin": 0.983
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_KE_roll",
+   "k": 0.664,
+   "eff": 0.423,
+   "lin": 0.918
+  },
+  {
+   "A": "Q_g_field",
+   "B": "Q_E_orb",
+   "k": 0.639,
+   "eff": 0.388,
+   "lin": 1.0
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_KE_roll",
+   "k": 0.872,
+   "eff": 0.525,
+   "lin": 0.738
+  },
+  {
+   "A": "Q_k_spr",
+   "B": "Q_a_shm",
+   "k": 0.718,
+   "eff": 0.393,
+   "lin": 0.986
+  },
+  {
+   "A": "Q_sigma_s",
+   "B": "Q_P_rad",
+   "k": -0.746,
+   "eff": 0.403,
+   "lin": 0.96
+  },
+  {
+   "A": "Q_v_tan",
+   "B": "Q_a_tan",
+   "k": 0.763,
+   "eff": 0.401,
+   "lin": 0.965
+  },
+  {
+   "A": "Q_a_tan",
+   "B": "Q_v_tan",
+   "k": 0.697,
+   "eff": 0.391,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_KE_rot",
+   "B": "Q_p",
+   "k": 0.67,
+   "eff": 0.392,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_KE_rot",
+   "k": 0.664,
+   "eff": 0.386,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_f1",
+   "k": 0.788,
+   "eff": 0.398,
+   "lin": 0.962
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_L_ang",
+   "k": 0.716,
+   "eff": 0.389,
+   "lin": 0.984
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_I_rot",
+   "k": 0.696,
+   "eff": 0.394,
+   "lin": 0.966
+  },
+  {
+   "A": "Q_F",
+   "B": "Q_L_ang",
+   "k": 0.746,
+   "eff": 0.405,
+   "lin": 0.939
+  },
+  {
+   "A": "Q_d_axis",
+   "B": "Q_tau",
+   "k": 0.875,
+   "eff": 0.43,
+   "lin": 0.884
+  },
+  {
+   "A": "Q_L_pend",
+   "B": "Q_phi",
+   "k": -0.747,
+   "eff": 0.4,
+   "lin": 0.95
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_L_lat",
+   "k": -0.667,
+   "eff": 0.382,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_F_buoy",
+   "k": 0.655,
+   "eff": 0.407,
+   "lin": 0.926
+  },
+  {
+   "A": "Q_s",
+   "B": "Q_ac",
+   "k": 0.811,
+   "eff": 0.408,
+   "lin": 0.924
+  },
+  {
+   "A": "Q_v_avg",
+   "B": "Q_p",
+   "k": 0.746,
+   "eff": 0.398,
+   "lin": 0.947
+  },
+  {
+   "A": "Q_E_shm",
+   "B": "Q_a_shm",
+   "k": 0.634,
+   "eff": 0.379,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_a_max",
+   "B": "Q_v_shm",
+   "k": 0.637,
+   "eff": 0.379,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_g_field",
+   "B": "Q_T_orb",
+   "k": -0.622,
+   "eff": 0.376,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_dp",
+   "k": 0.648,
+   "eff": 0.389,
+   "lin": 0.963
+  },
+  {
+   "A": "Q_v_avg",
+   "B": "Q_L_ang",
+   "k": 0.84,
+   "eff": 0.417,
+   "lin": 0.897
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_v_max",
+   "k": 0.608,
+   "eff": 0.376,
+   "lin": 0.993
+  },
+  {
+   "A": "Q_F_grav",
+   "B": "Q_PE_orb",
+   "k": 0.6,
+   "eff": 0.375,
+   "lin": 0.997
+  },
+  {
+   "A": "Q_a",
+   "B": "Q_a_tot",
+   "k": 0.653,
+   "eff": 0.382,
+   "lin": 0.975
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_N_incl",
+   "k": 0.662,
+   "eff": 0.375,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_F_incl",
+   "k": 0.662,
+   "eff": 0.375,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_p_tot",
+   "k": 0.59,
+   "eff": 0.374,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_a_tan",
+   "k": 0.753,
+   "eff": 0.4,
+   "lin": 0.929
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_s",
+   "k": 0.654,
+   "eff": 0.402,
+   "lin": 0.921
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_mu_lin",
+   "k": -0.79,
+   "eff": 0.397,
+   "lin": 0.931
+  },
+  {
+   "A": "Q_KE_roll",
+   "B": "Q_tau",
+   "k": 0.64,
+   "eff": 0.371,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_dL",
+   "k": 0.663,
+   "eff": 0.376,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_vy",
+   "B": "Q_ac",
+   "k": 0.754,
+   "eff": 0.393,
+   "lin": 0.937
+  },
+  {
+   "A": "Q_F_grav",
+   "B": "Q_E_orb",
+   "k": 0.595,
+   "eff": 0.37,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_a_tan",
+   "B": "Q_tau",
+   "k": 0.661,
+   "eff": 0.371,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_KE_roll",
+   "B": "Q_a_shm",
+   "k": 0.662,
+   "eff": 0.37,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_a_max",
+   "k": 0.561,
+   "eff": 0.379,
+   "lin": 0.968
+  },
+  {
+   "A": "Q_d_axis",
+   "B": "Q_I2",
+   "k": 0.828,
+   "eff": 0.398,
+   "lin": 0.92
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_c_spec",
+   "k": -0.607,
+   "eff": 0.367,
+   "lin": 0.999
+  },
+  {
+   "A": "Q_dU",
+   "B": "Q_L_lat",
+   "k": 0.639,
+   "eff": 0.37,
+   "lin": 0.991
+  },
+  {
+   "A": "Q_dL",
+   "B": "Q_L_ang",
+   "k": 0.714,
+   "eff": 0.374,
+   "lin": 0.977
+  },
+  {
+   "A": "Q_ac",
+   "B": "Q_phi",
+   "k": 0.669,
+   "eff": 0.372,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_tau",
+   "k": 0.575,
+   "eff": 0.387,
+   "lin": 0.94
+  },
+  {
+   "A": "Q_J_imp",
+   "B": "Q_s",
+   "k": 0.605,
+   "eff": 0.371,
+   "lin": 0.977
+  },
+  {
+   "A": "Q_U_int",
+   "B": "Q_Q_heat",
+   "k": 0.74,
+   "eff": 0.387,
+   "lin": 0.939
+  },
+  {
+   "A": "Q_W_th",
+   "B": "Q_dS",
+   "k": 0.709,
+   "eff": 0.379,
+   "lin": 0.956
+  },
+  {
+   "A": "Q_omega",
+   "B": "Q_f2",
+   "k": 0.757,
+   "eff": 0.379,
+   "lin": 0.956
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_L_ang",
+   "k": 0.788,
+   "eff": 0.388,
+   "lin": 0.932
+  },
+  {
+   "A": "Q_W_th",
+   "B": "Q_U_int",
+   "k": 0.673,
+   "eff": 0.371,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_W_work",
+   "B": "Q_dp",
+   "k": 0.597,
+   "eff": 0.364,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_KE_roll",
+   "B": "Q_I2",
+   "k": 0.627,
+   "eff": 0.36,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_alpha",
+   "B": "Q_a_tot",
+   "k": 0.663,
+   "eff": 0.373,
+   "lin": 0.965
+  },
+  {
+   "A": "Q_PE_g",
+   "B": "Q_p",
+   "k": 0.628,
+   "eff": 0.362,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_Q_heat",
+   "B": "Q_dV",
+   "k": 0.674,
+   "eff": 0.368,
+   "lin": 0.975
+  },
+  {
+   "A": "Q_Q_heat",
+   "B": "Q_dE_mech",
+   "k": 0.673,
+   "eff": 0.379,
+   "lin": 0.931
+  },
+  {
+   "A": "Q_Q_heat",
+   "B": "Q_dKE",
+   "k": 0.673,
+   "eff": 0.379,
+   "lin": 0.931
+  },
+  {
+   "A": "Q_N_norm",
+   "B": "Q_dp",
+   "k": 0.647,
+   "eff": 0.371,
+   "lin": 0.95
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_P_pow",
+   "k": 0.564,
+   "eff": 0.36,
+   "lin": 0.979
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_v_shm",
+   "k": 0.579,
+   "eff": 0.354,
+   "lin": 0.994
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_F_grav",
+   "k": 0.689,
+   "eff": 0.379,
+   "lin": 0.927
+  },
+  {
+   "A": "Q_F_visc",
+   "B": "Q_L_ang",
+   "k": 0.593,
+   "eff": 0.368,
+   "lin": 0.952
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_phi",
+   "k": 0.623,
+   "eff": 0.353,
+   "lin": 0.99
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_PE_orb",
+   "k": 0.652,
+   "eff": 0.386,
+   "lin": 0.905
+  },
+  {
+   "A": "Q_J_imp",
+   "B": "Q_dE_mech",
+   "k": 0.605,
+   "eff": 0.355,
+   "lin": 0.983
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_f_beat",
+   "k": 0.732,
+   "eff": 0.373,
+   "lin": 0.936
+  },
+  {
+   "A": "Q_J_imp",
+   "B": "Q_dKE",
+   "k": 0.605,
+   "eff": 0.354,
+   "lin": 0.983
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_om2",
+   "k": 0.722,
+   "eff": 0.371,
+   "lin": 0.938
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_I2",
+   "k": 0.608,
+   "eff": 0.35,
+   "lin": 0.996
+  },
+  {
+   "A": "Q_h_cap",
+   "B": "Q_a_tan",
+   "k": -0.697,
+   "eff": 0.375,
+   "lin": 0.923
+  },
+  {
+   "A": "Q_v_avg",
+   "B": "Q_a_max",
+   "k": 0.775,
+   "eff": 0.404,
+   "lin": 0.856
+  },
+  {
+   "A": "Q_dS",
+   "B": "Q_W_th",
+   "k": 0.688,
+   "eff": 0.367,
+   "lin": 0.942
+  },
+  {
+   "A": "Q_KE_roll",
+   "B": "Q_phi",
+   "k": 0.621,
+   "eff": 0.347,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_F_spr",
+   "B": "Q_E_shm",
+   "k": 0.646,
+   "eff": 0.352,
+   "lin": 0.977
+  },
+  {
+   "A": "Q_KE_roll",
+   "B": "Q_I_rot",
+   "k": 0.537,
+   "eff": 0.349,
+   "lin": 0.987
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_T_tens",
+   "k": 0.66,
+   "eff": 0.352,
+   "lin": 0.978
+  },
+  {
+   "A": "Q_om2",
+   "B": "Q_KE_rot",
+   "k": 0.724,
+   "eff": 0.441,
+   "lin": 0.779
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_dp",
+   "k": 0.627,
+   "eff": 0.354,
+   "lin": 0.97
+  },
+  {
+   "A": "Q_N_norm",
+   "B": "Q_J_imp",
+   "k": 0.631,
+   "eff": 0.354,
+   "lin": 0.97
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_L_ang",
+   "k": 0.538,
+   "eff": 0.353,
+   "lin": 0.971
+  },
+  {
+   "A": "Q_s",
+   "B": "Q_a_shm",
+   "k": 0.661,
+   "eff": 0.36,
+   "lin": 0.95
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_a_shm",
+   "k": 0.536,
+   "eff": 0.355,
+   "lin": 0.964
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_a_max",
+   "k": -0.554,
+   "eff": 0.347,
+   "lin": 0.984
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_a_shm",
+   "k": 0.639,
+   "eff": 0.348,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_v_wave",
+   "B": "Q_f1",
+   "k": 0.677,
+   "eff": 0.362,
+   "lin": 0.944
+  },
+  {
+   "A": "Q_P_press",
+   "B": "Q_h_cap",
+   "k": 0.639,
+   "eff": 0.374,
+   "lin": 0.906
+  },
+  {
+   "A": "Q_f2",
+   "B": "Q_T_period",
+   "k": -0.712,
+   "eff": 0.371,
+   "lin": 0.915
+  },
+  {
+   "A": "Q_v_cm",
+   "B": "Q_ac",
+   "k": 0.726,
+   "eff": 0.36,
+   "lin": 0.941
+  },
+  {
+   "A": "Q_p",
+   "B": "Q_I2",
+   "k": 0.682,
+   "eff": 0.381,
+   "lin": 0.889
+  },
+  {
+   "A": "Q_s",
+   "B": "Q_a_tot",
+   "k": 0.635,
+   "eff": 0.344,
+   "lin": 0.986
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_phi",
+   "k": 0.519,
+   "eff": 0.355,
+   "lin": 0.953
+  },
+  {
+   "A": "Q_KE_rot",
+   "B": "Q_ac",
+   "k": 0.521,
+   "eff": 0.347,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_KE_rot",
+   "B": "Q_a_shm",
+   "k": 0.572,
+   "eff": 0.338,
+   "lin": 0.998
+  },
+  {
+   "A": "Q_omega0",
+   "B": "Q_L_pend",
+   "k": -0.745,
+   "eff": 0.367,
+   "lin": 0.92
+  },
+  {
+   "A": "Q_I_rot",
+   "B": "Q_KE",
+   "k": 0.549,
+   "eff": 0.344,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_P_press",
+   "B": "Q_PE_g",
+   "k": 0.779,
+   "eff": 0.381,
+   "lin": 0.883
+  },
+  {
+   "A": "Q_f1",
+   "B": "Q_T_period",
+   "k": -0.706,
+   "eff": 0.37,
+   "lin": 0.91
+  },
+  {
+   "A": "Q_v_wave",
+   "B": "Q_f2",
+   "k": 0.678,
+   "eff": 0.357,
+   "lin": 0.94
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_tau",
+   "k": 0.577,
+   "eff": 0.351,
+   "lin": 0.955
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_m",
+   "k": 0.589,
+   "eff": 0.337,
+   "lin": 0.995
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_I2",
+   "k": 0.682,
+   "eff": 0.351,
+   "lin": 0.954
+  },
+  {
+   "A": "Q_KE_rot",
+   "B": "Q_a_max",
+   "k": 0.573,
+   "eff": 0.338,
+   "lin": 0.99
+  },
+  {
+   "A": "Q_n_mol",
+   "B": "Q_Q_heat",
+   "k": 0.709,
+   "eff": 0.354,
+   "lin": 0.943
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_I2",
+   "k": 0.687,
+   "eff": 0.352,
+   "lin": 0.95
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_KE_roll",
+   "k": 0.51,
+   "eff": 0.344,
+   "lin": 0.97
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_I2",
+   "k": 0.686,
+   "eff": 0.351,
+   "lin": 0.949
+  },
+  {
+   "A": "Q_vy",
+   "B": "Q_s",
+   "k": 0.727,
+   "eff": 0.359,
+   "lin": 0.928
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_a_tot",
+   "k": 0.689,
+   "eff": 0.349,
+   "lin": 0.952
+  },
+  {
+   "A": "Q_s",
+   "B": "Q_L_ang",
+   "k": 0.673,
+   "eff": 0.345,
+   "lin": 0.963
+  },
+  {
+   "A": "Q_T_tens",
+   "B": "Q_dL",
+   "k": 0.638,
+   "eff": 0.341,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_ac",
+   "k": 0.63,
+   "eff": 0.352,
+   "lin": 0.942
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_tau",
+   "k": 0.68,
+   "eff": 0.358,
+   "lin": 0.927
+  },
+  {
+   "A": "Q_m",
+   "B": "Q_KE_roll",
+   "k": 0.536,
+   "eff": 0.383,
+   "lin": 0.865
+  },
+  {
+   "A": "Q_v_wave",
+   "B": "Q_T_period",
+   "k": -0.689,
+   "eff": 0.355,
+   "lin": 0.929
+  },
+  {
+   "A": "Q_U_el",
+   "B": "Q_dL",
+   "k": 0.599,
+   "eff": 0.343,
+   "lin": 0.962
+  },
+  {
+   "A": "Q_v0",
+   "B": "Q_y",
+   "k": 0.782,
+   "eff": 0.371,
+   "lin": 0.888
+  },
+  {
+   "A": "Q_om2",
+   "B": "Q_a_shm",
+   "k": 0.734,
+   "eff": 0.422,
+   "lin": 0.78
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_U_el",
+   "k": 0.609,
+   "eff": 0.343,
+   "lin": 0.959
+  },
+  {
+   "A": "Q_a_shm",
+   "B": "Q_a_tot",
+   "k": 0.524,
+   "eff": 0.355,
+   "lin": 0.922
+  },
+  {
+   "A": "Q_f2",
+   "B": "Q_omega",
+   "k": 0.672,
+   "eff": 0.386,
+   "lin": 0.844
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_s",
+   "k": 0.583,
+   "eff": 0.33,
+   "lin": 0.986
+  },
+  {
+   "A": "Q_L_ang",
+   "B": "Q_v_tan",
+   "k": 0.53,
+   "eff": 0.355,
+   "lin": 0.916
+  },
+  {
+   "A": "Q_v_shm",
+   "B": "Q_KE_rot",
+   "k": 0.6,
+   "eff": 0.34,
+   "lin": 0.955
+  },
+  {
+   "A": "Q_N_norm",
+   "B": "Q_dL",
+   "k": 0.62,
+   "eff": 0.359,
+   "lin": 0.905
+  },
+  {
+   "A": "Q_dp",
+   "B": "Q_s",
+   "k": 0.652,
+   "eff": 0.34,
+   "lin": 0.952
+  },
+  {
+   "A": "Q_f",
+   "B": "Q_k_spr",
+   "k": 0.673,
+   "eff": 0.356,
+   "lin": 0.909
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_T_period",
+   "k": -0.637,
+   "eff": 0.331,
+   "lin": 0.974
+  },
+  {
+   "A": "Q_v",
+   "B": "Q_f",
+   "k": 0.631,
+   "eff": 0.331,
+   "lin": 0.971
+  },
+  {
+   "A": "Q_dp",
+   "B": "Q_U_el",
+   "k": 0.565,
+   "eff": 0.408,
+   "lin": 0.788
+  },
+  {
+   "A": "Q_a_tan",
+   "B": "Q_L_ang",
+   "k": 0.594,
+   "eff": 0.324,
+   "lin": 0.988
+  },
+  {
+   "A": "Q_eta",
+   "B": "Q_c_spec",
+   "k": 0.817,
+   "eff": 0.393,
+   "lin": 0.816
+  },
+  {
+   "A": "Q_I_rot",
+   "B": "Q_p",
+   "k": 0.538,
+   "eff": 0.323,
+   "lin": 0.99
+  },
+  {
+   "A": "Q_KE",
+   "B": "Q_tau",
+   "k": 0.573,
+   "eff": 0.324,
+   "lin": 0.987
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_KE",
+   "k": 0.488,
+   "eff": 0.336,
+   "lin": 0.951
+  },
+  {
+   "A": "Q_dE_mech",
+   "B": "Q_P_pow",
+   "k": 0.576,
+   "eff": 0.328,
+   "lin": 0.975
+  },
+  {
+   "A": "Q_dKE",
+   "B": "Q_P_pow",
+   "k": 0.576,
+   "eff": 0.328,
+   "lin": 0.975
+  },
+  {
+   "A": "Q_vx",
+   "B": "Q_s",
+   "k": 0.718,
+   "eff": 0.388,
+   "lin": 0.822
+  },
+  {
+   "A": "Q_f1",
+   "B": "Q_omega",
+   "k": 0.659,
+   "eff": 0.383,
+   "lin": 0.831
+  },
+  {
+   "A": "Q_W_th",
+   "B": "Q_dKE",
+   "k": 0.61,
+   "eff": 0.351,
+   "lin": 0.906
+  },
+  {
+   "A": "Q_x",
+   "B": "Q_J_imp",
+   "k": 0.598,
+   "eff": 0.324,
+   "lin": 0.98
+  },
+  {
+   "A": "Q_W_th",
+   "B": "Q_dE_mech",
+   "k": 0.61,
+   "eff": 0.351,
+   "lin": 0.905
+  },
+  {
+   "A": "Q_J_imp",
+   "B": "Q_p",
+   "k": 0.606,
+   "eff": 0.323,
+   "lin": 0.981
+  },
+  {
+   "A": "Q_P_pow",
+   "B": "Q_s",
+   "k": 0.526,
+   "eff": 0.329,
+   "lin": 0.963
+  },
+  {
+   "A": "Q_dKE",
+   "B": "Q_J_imp",
+   "k": 0.638,
+   "eff": 0.338,
+   "lin": 0.939
+  },
+  {
+   "A": "Q_F_incl",
+   "B": "Q_dp",
+   "k": 0.674,
+   "eff": 0.341,
+   "lin": 0.928
+  },
+  {
+   "A": "Q_dE_mech",
+   "B": "Q_J_imp",
+   "k": 0.638,
+   "eff": 0.338,
+   "lin": 0.939
+  },
+  {
+   "A": "Q_E_mech",
+   "B": "Q_W_wt",
+   "k": 0.663,
+   "eff": 0.333,
+   "lin": 0.951
+  },
+  {
+   "A": "Q_N_incl",
+   "B": "Q_dp",
+   "k": 0.673,
+   "eff": 0.341,
+   "lin": 0.928
+  },
+  {
+   "A": "Q_R_range",
+   "B": "Q_H_max",
+   "k": 0.703,
+   "eff": 0.348,
+   "lin": 0.908
+  },
+  {
+   "A": "Q_f_beat",
+   "B": "Q_f",
+   "k": 0.649,
+   "eff": 0.332,
+   "lin": 0.952
+  },
+  {
+   "A": "Q_W_wt",
+   "B": "Q_KE",
+   "k": 0.616,
+   "eff": 0.336,
+   "lin": 0.941
+  },
+  {
+   "A": "Q_v_wave",
+   "B": "Q_ac",
+   "k": 0.7,
+   "eff": 0.354,
+   "lin": 0.891
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_dE_mech",
+   "k": 0.519,
+   "eff": 0.318,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_tau",
+   "B": "Q_dKE",
+   "k": 0.519,
+   "eff": 0.318,
+   "lin": 0.992
+  },
+  {
+   "A": "Q_v_avg",
+   "B": "Q_ac",
+   "k": 0.762,
+   "eff": 0.377,
+   "lin": 0.833
+  },
+  {
+   "A": "Q_dp",
+   "B": "Q_tau",
+   "k": 0.549,
+   "eff": 0.334,
+   "lin": 0.941
+  },
+  {
+   "A": "Q_U_el",
+   "B": "Q_J_imp",
+   "k": 0.521,
+   "eff": 0.323,
+   "lin": 0.968
+  },
+  {
+   "A": "Q_I2",
+   "B": "Q_KE_roll",
+   "k": 0.552,
+   "eff": 0.319,
+   "lin": 0.982
+  },
+  {
+   "A": "Q_U_int",
+   "B": "Q_c_spec",
+   "k": 0.678,
+   "eff": 0.339,
+   "lin": 0.921
+  },
+  {
+   "A": "Q_dKE",
+   "B": "Q_t",
+   "k": 0.555,
+   "eff": 0.315,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_dE_mech",
+   "B": "Q_t",
+   "k": 0.555,
+   "eff": 0.315,
+   "lin": 0.989
+  },
+  {
+   "A": "Q_KE_rot",
+   "B": "Q_dL",
+   "k": 0.475,
+   "eff": 0.319,
+   "lin": 0.976
+  },
+  {
+   "A": "Q_L_pend",
+   "B": "Q_omega",
+   "k": -0.58,
+   "eff": 0.316,
+   "lin": 0.985
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+# Generated training artifacts are released separately through Zenodo or GitHub Releases.
+*.pt
+*.npz
+ckpt_v9/
+__pycache__/
+*.py[cod]
+
+# Local tooling
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+
+\title{Solve, Mine, Prove: A Self-Auditing Graph Neural Network for Classical Mechanics}
+\author{Md Minnatullah\\
+\small Independent Researcher, Supaul, Bihar, India\\
+\small \texttt{mdminnatullah970@gmail.com}}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies a deliberately closed testbed for scientific relation discovery. I encode classical mechanics as a typed graph with 159 quantity nodes, 131 equation nodes, and 15 law nodes, and train an operator-conditioned graph attention network to infer hidden quantities from partial observations. The training corpus comprises 650,000 scenario-consistent physical worlds: every quantity in a world satisfies every relevant encoded equation, which makes multi-step solution paths available in the data. Five input--target combinations are excluded during training. At epoch 40, the archived model obtains $R^2$ between 0.986 and 0.994 on these tests, including a multi-step route and an algebraic inversion through a reverse graph edge.
+
+I then counterfactually probe the trained solver: vary one revealed quantity, observe a distant predicted quantity, and interpret the log-space response slope as a candidate power-law exponent. A symbolic audit converts monomial equations into exact linear constraints in log-space, allowing proposed relations to be classified as derivable corollaries, prior-sensitive artifacts, or cases outside the certifier's algebra. The central result is not new physics. In a closed synthetic corpus, no new physical law should survive audit. Instead, the system provides a reproducible framework for testing whether a neural relation-discovery pipeline can distinguish encoded consequences from correlations induced by its data-generating distribution.
+\end{abstract}
+
+\section{Introduction}
+
+Scientific machine learning is often evaluated by predictive accuracy alone. That is not enough for relation discovery. A model may predict well because it has learned an equation, because it exploits a shortcut in the training distribution, or because an apparently new relationship is simply a consequence of facts already supplied to it. This paper asks whether a graph neural network can be made accountable for that difference.
+
+The setting is classical mechanics, represented as a graph of quantities, equations, and governing laws. The model receives a partially observed physical world and predicts the remaining quantities. Its graph structure is explicit, but its numerical routing and use of alternate paths are learned from data. After training, I probe its counterfactual responses to seek relationships not represented by a direct equation node. A separate symbolic system audits every candidate against the equation system and a prior-shift test flags relationships that depend on sampling choices.
+
+The closed-world construction is a feature rather than a weakness. Since every training example is generated from known equations, the correct final answer is that no unexplained physical law remains. A discovery system that reports novelty anyway has failed its first audit. The contributions are therefore: (i) a scenario-consistent synthetic benchmark for partial-information physics solving; (ii) an operator-conditioned message-passing model; (iii) banned-combination tests for held-out solution routes; and (iv) an audit pipeline for separating logical consequences from distributional artifacts.
+
+\section{Related work}
+
+Message passing and attention over graphs provide useful relational inductive biases \cite{gilmer2017,kipf2017,velickovic2018,battaglia2018}. Relation-specific transformations with basis decomposition are used in R-GCNs \cite{schlichtkrull2018}. Symbolic regression systems, including AI Feynman and PySR, infer formulas from numerical observations \cite{udrescu2020,cranmer2023}. The present task differs: the formulas defining the world are already represented in a graph, and the question is whether a learned solver can route through them under partial observation and then be audited when it suggests a relationship. This differs from physics-informed neural networks, which generally impose equations through a training loss \cite{raissi2019}; here equations primarily determine graph topology and the data generator.
+
+\section{Physics graph and scenario data}
+
+The graph contains 305 nodes: 159 quantities, 131 equations, and 15 law nodes. Quantity features include SI dimension exponents, tensor rank, and flags for distinctions that dimensions alone cannot express. Equation features encode broad mathematical forms, including linear, quadratic, trigonometric, ratio, square-root, exponential, and conservation relationships. Each of 1,217 directed edges carries a 16-dimensional operator and role encoding. Equation input and output edges have reversed counterparts, allowing the network to learn that an equation may be used in an inverse direction when the appropriate variables are known.
+
+The data generator samples one of 13 scenario families---linear and projectile motion, circular motion, inclines, work and energy, collisions, rotation, gravitation, simple harmonic motion, fluids, thermodynamics, waves, and material properties. It derives all remaining quantities inside a scenario and runs identity checks before writing data. The resulting corpus contains 650,000 worlds. Values are represented by
+\[
+  \operatorname{mag}(x)=\log_{10}(|x|+\epsilon)/10,
+\]
+with sign stored separately. This is important for multiplicative equations: $F=ma$, for example, becomes an additive relationship in log-magnitude space. It does not make additive equations linear; those remain nonlinear in this representation.
+
+\section{Model and training}
+
+The model uses eight graph-attention layers with 128-dimensional node states and four attention heads. For an edge $e_{ij}$, the message is a learned mixture of eight basis transforms,
+\[
+ m_{ij}=\sum_{b=1}^{8}c_b(e_{ij})V_bh_j,
+\]
+where the edge features determine the coefficients $c_b$. Thus a message on a multiplication edge can be transformed differently from one on an addition, trigonometric, or reverse edge. Static structural features, a node-type embedding, and either a revealed value or a learned unknown token initialize the node states. Separate heads predict magnitude and sign.
+
+For each training world, physical constants are revealed and a random 30--80\% of present quantities are revealed. The remainder are targets. Training uses Huber loss for magnitude and cross-entropy for sign. The archived configuration uses a micro-batch size of 128 and gradient accumulation of two micro-batches.
+
+\section{Held-out route evaluation}
+
+To test routing rather than ordinary masked reconstruction, five input--target combinations are excluded from training. They include $(f,r)\rightarrow v_{\tan}$, $(T,r)\rightarrow v_{\tan}$, $(m,r,T)\rightarrow KE$, $(k,m,A)\rightarrow v_{\max}$, and $(\lambda,f,\mu)\rightarrow T_{\mathrm{tension}}$. The final case requires information to pass forward through $v=f\lambda$ and then backward through $v=\sqrt{T/\mu}$.
+
+Table~\ref{tab:ladder} reports values stored in the archived training history. At epoch 40 all five tests exceed $R^2=0.985$.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lccccc}
+\toprule
+ & L0 & L1 & L2 & L3 & L4\\
+\midrule
+epoch 0  & 0.837 & 0.511 & 0.289 & 0.559 & 0.033\\
+epoch 10 & 0.983 & 0.968 & 0.778 & 0.942 & 0.927\\
+epoch 40 & 0.990 & 0.994 & 0.986 & 0.991 & 0.986\\
+\bottomrule
+\end{tabular}
+\caption{Held-out banned-combination test $R^2$. Values are taken from \texttt{v9\_history.json}.}
+\label{tab:ladder}
+\end{table}
+
+The best archived validation magnitude MAE is 0.02356, reached at epoch 31. The epoch-40 validation MAE is 0.02386 and sign accuracy is 98.67\%.
+
+\section{Mine and prove}
+
+For an ordered pair of distant quantity nodes $(A,B)$, the miner reveals $A$ and the applicable constants, sweeps the log-magnitude of $A$, and records the predicted log-magnitude of $B$. A near-linear response with slope $k$ expresses the model's local hypothesis $B\propto A^k$. Candidate ranking combines response magnitude and linearity, then a second probe evaluates the response inside partially revealed physical worlds.
+
+The audit represents each monomial equation as a linear constraint over log-magnitudes. Exact Gaussian elimination with rational exponents can therefore produce a formula and a proof trace when a candidate is a consequence of the encoded monomial system. Candidates without such a proof are evaluated under two regenerated data distributions with independently altered sampling ranges. A relation whose empirical slope changes under these shifts is a prior-sensitive artifact, not evidence of a universal law. Additive and trigonometric routes are intentionally outside the current monomial certifier and must be reported as such rather than overclaimed.
+
+This procedure yields familiar, unencoded corollaries such as $v_{\mathrm{esc}}=\sqrt{2}v_{\mathrm{orb}}$ and $PE_{\mathrm{orb}}=2E_{\mathrm{orb}}$. These are rediscoveries and validation cases, not novel laws. The complete 400-candidate audit contains 12 proven-pure and 242 proven-conditional records, corresponding to 254 unique formulas; it also identifies 33 prior-sensitive artifacts, 91 additive-mediated cases, 6 unresolved-invariant cases, and 16 unresolved cases. The full machine-readable discovery screen and catalog are tracked with this manuscript.
+
+\section{Limitations and next steps}
+
+The benchmark is synthetic and closed. It tests auditability and route learning, not the discovery of unknown physical laws. The graph and scenario generator contain modeling choices that can create correlations, so raw artifacts, generator code, and prior-shift tests are necessary for interpreting every result. The certifier covers monomial algebra only; additive and trigonometric reasoning are known boundaries. Results currently use one architecture and seed, and the study does not yet compare against non-neural equation solvers, symbolic regression, or ablated graph constructions.
+
+The next decisive experiment is external data: for example, controlled pendulum, orbital, or materials datasets whose measurement noise and omitted variables are not generated by the graph itself. The same audit discipline should be applied there, with held-out datasets replacing the synthetic prior-shift protocol.
+
+\section*{Reproducibility and disclosure}
+
+The code, graph builder, generator, training history, and artifact manifest are released with this manuscript. Large data arrays and checkpoints are versioned separately through an archival release. Drafting and coding used AI assistance; the author is responsible for the research design, experimental claims, and final manuscript.
+
+\begin{thebibliography}{9}\small
+\bibitem{gilmer2017} J. Gilmer et al. Neural message passing for quantum chemistry. ICML, 2017.
+\bibitem{kipf2017} T. Kipf and M. Welling. Semi-supervised classification with graph convolutional networks. ICLR, 2017.
+\bibitem{velickovic2018} P. Veli\v{c}kovi\'c et al. Graph attention networks. ICLR, 2018.
+\bibitem{battaglia2018} P. Battaglia et al. Relational inductive biases, deep learning, and graph networks. arXiv:1806.01261, 2018.
+\bibitem{schlichtkrull2018} M. Schlichtkrull et al. Modeling relational data with graph convolutional networks. ESWC, 2018.
+\bibitem{udrescu2020} S.-M. Udrescu and M. Tegmark. AI Feynman. Science Advances, 2020.
+\bibitem{cranmer2023} M. Cranmer. Interpretable machine learning for science with PySR. arXiv:2305.01582, 2023.
+\bibitem{raissi2019} M. Raissi, P. Perdikaris, and G. Karniadakis. Physics-informed neural networks. Journal of Computational Physics, 2019.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,648 @@
+[
+ {
+  "A": "Q_v_esc",
+  "B": "Q_g_field",
+  "probe_k": 2.501,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "4",
+  "k_float": 4.0,
+  "extras": [
+   "Q_M_big"
+  ],
+  "law": "Q_g_field = 1/4 * Q_v_esc^4 * Q_G^-1 * Q_M_big^-1",
+  "proof": "-1/4xEQ_gfield +1xEQ_vesc",
+  "k_data": 2.561,
+  "k_narrow": 2.422429496940677,
+  "k_shift": 2.5383497629580782
+ },
+ {
+  "A": "Q_v_orb",
+  "B": "Q_g_field",
+  "probe_k": 2.519,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "4",
+  "k_float": 4.0,
+  "extras": [
+   "Q_M_big"
+  ],
+  "law": "Q_g_field = 1 * Q_v_orb^4 * Q_G^-1 * Q_M_big^-1",
+  "proof": "-1/4xEQ_gfield +1xEQ_vorb",
+  "k_data": 2.561,
+  "k_narrow": 2.422429474046145,
+  "k_shift": 2.5383495771743916
+ },
+ {
+  "A": "Q_v_esc",
+  "B": "Q_F_grav",
+  "probe_k": 2.358,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "4",
+  "k_float": 4.0,
+  "extras": [
+   "Q_m",
+   "Q_M_big"
+  ],
+  "law": "Q_F_grav = 1/4 * Q_v_esc^4 * Q_m^1 * Q_G^-1 * Q_M_big^-1",
+  "proof": "-1/4xEQ_Fgrav +1xEQ_vesc",
+  "k_data": 2.556,
+  "k_narrow": 2.4301675896436765,
+  "k_shift": 2.559502155722253
+ },
+ {
+  "A": "Q_v_orb",
+  "B": "Q_F_grav",
+  "probe_k": 2.345,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "4",
+  "k_float": 4.0,
+  "extras": [
+   "Q_m",
+   "Q_M_big"
+  ],
+  "law": "Q_F_grav = 1 * Q_v_orb^4 * Q_m^1 * Q_G^-1 * Q_M_big^-1",
+  "proof": "-1/4xEQ_Fgrav +1xEQ_vorb",
+  "k_data": 2.556,
+  "k_narrow": 2.4301675612787585,
+  "k_shift": 2.5595019608980074
+ },
+ {
+  "A": "Q_v_esc",
+  "B": "Q_PE_orb",
+  "probe_k": 1.849,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m"
+  ],
+  "law": "Q_PE_orb = 1/2 * Q_v_esc^2 * Q_m^1",
+  "proof": "-1/2xEQ_PEorb +1xEQ_vesc",
+  "k_data": 1.995,
+  "k_narrow": 2.009406338046667,
+  "k_shift": 2.02282052177143
+ },
+ {
+  "A": "Q_v_orb",
+  "B": "Q_PE_orb",
+  "probe_k": 1.828,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m"
+  ],
+  "law": "Q_PE_orb = 1 * Q_v_orb^2 * Q_m^1",
+  "proof": "-1/2xEQ_PEorb +1xEQ_vorb",
+  "k_data": 1.995,
+  "k_narrow": 2.0094063162600366,
+  "k_shift": 2.0228203688973445
+ },
+ {
+  "A": "Q_v_esc",
+  "B": "Q_E_orb",
+  "probe_k": 1.797,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m"
+  ],
+  "law": "Q_E_orb = 1/4 * Q_v_esc^2 * Q_m^1",
+  "proof": "+1xEQ_Eorb -2xEQ_vesc",
+  "k_data": 1.995,
+  "k_narrow": 2.0094063099438633,
+  "k_shift": 2.022820513595943
+ },
+ {
+  "A": "Q_v_orb",
+  "B": "Q_E_orb",
+  "probe_k": 1.792,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m"
+  ],
+  "law": "Q_E_orb = 1/2 * Q_v_orb^2 * Q_m^1",
+  "proof": "+1xEQ_Eorb -2xEQ_vorb",
+  "k_data": 1.995,
+  "k_narrow": 2.0094062881572268,
+  "k_shift": 2.0228203607218522
+ },
+ {
+  "A": "Q_v_esc",
+  "B": "Q_T_orb",
+  "probe_k": -1.524,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "-3",
+  "k_float": -3.0,
+  "extras": [
+   "Q_M_big"
+  ],
+  "law": "Q_T_orb = 10^1.250 * Q_v_esc^-3 * Q_G^1 * Q_M_big^1",
+  "proof": "+1/3xEQ_Torb +1xEQ_vesc",
+  "k_data": -1.561,
+  "k_narrow": -1.4215953718643926,
+  "k_shift": -1.5375157022258772
+ },
+ {
+  "A": "Q_T_orb",
+  "B": "Q_g_field",
+  "probe_k": -1.486,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "-4/3",
+  "k_float": -1.3333333333333333,
+  "extras": [
+   "Q_M_big"
+  ],
+  "law": "Q_g_field = 10^1.064 * Q_T_orb^-4/3 * Q_G^1/3 * Q_M_big^1/3",
+  "proof": "+1xEQ_Torb +3/4xEQ_gfield",
+  "k_data": -1.479,
+  "k_narrow": -1.5177069808191548,
+  "k_shift": -1.49151990649259
+ },
+ {
+  "A": "Q_T_orb",
+  "B": "Q_F_grav",
+  "probe_k": -1.495,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "-4/3",
+  "k_float": -1.3333333333333333,
+  "extras": [
+   "Q_m",
+   "Q_M_big"
+  ],
+  "law": "Q_F_grav = 10^1.064 * Q_T_orb^-4/3 * Q_m^1 * Q_G^1/3 * Q_M_big^1/3",
+  "proof": "+3/4xEQ_Fgrav +1xEQ_Torb",
+  "k_data": -1.476,
+  "k_narrow": -1.5151444571658141,
+  "k_shift": -1.486500035176044
+ },
+ {
+  "A": "Q_v_orb",
+  "B": "Q_T_orb",
+  "probe_k": -1.523,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "-3",
+  "k_float": -3.0,
+  "extras": [
+   "Q_M_big"
+  ],
+  "law": "Q_T_orb = 2pi * Q_v_orb^-3 * Q_G^1 * Q_M_big^1",
+  "proof": "+1xEQ_Torb +3xEQ_vorb",
+  "k_data": -1.561,
+  "k_narrow": -1.4215953571279873,
+  "k_shift": -1.5375155883589546
+ },
+ {
+  "A": "Q_W_wt",
+  "B": "Q_PE_orb",
+  "probe_k": 1.614,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_v_esc"
+  ],
+  "law": "Q_PE_orb = 1/2 * Q_W_wt^1 * Q_g^-1 * Q_v_esc^2",
+  "proof": "-1/2xEQ_PEorb +1xEQ_vesc +1/2xEQ_weight",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_F_incl",
+  "B": "Q_PE_orb",
+  "probe_k": 1.573,
+  "verdict": "ADDITIVE-MEDIATED",
+  "tag": "NOT-DERIVABLE(monomial)",
+  "note": "Q_F_incl appears only in additive/trig eqs",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_N_incl",
+  "B": "Q_PE_orb",
+  "probe_k": 1.572,
+  "verdict": "ADDITIVE-MEDIATED",
+  "tag": "NOT-DERIVABLE(monomial)",
+  "note": "Q_N_incl appears only in additive/trig eqs",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_v_max",
+  "B": "Q_a_max",
+  "probe_k": 1.41,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_A_amp"
+  ],
+  "law": "Q_a_max = 1 * Q_v_max^2 * Q_A_amp^-1",
+  "proof": "+1xEQ_amax -2xEQ_vmax",
+  "k_data": 1.514,
+  "k_narrow": 1.4110635807822396,
+  "k_shift": 1.6959042737033463
+ },
+ {
+  "A": "Q_E_orb",
+  "B": "Q_F_grav",
+  "probe_k": 1.494,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_r_orb"
+  ],
+  "law": "Q_F_grav = 2 * Q_E_orb^1 * Q_r_orb^-1",
+  "proof": "+1xEQ_Eorb -1xEQ_Fgrav",
+  "k_data": 1.219,
+  "k_narrow": 1.1865951528353516,
+  "k_shift": 1.2302064588914634
+ },
+ {
+  "A": "Q_E_orb",
+  "B": "Q_g_field",
+  "probe_k": 1.483,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m",
+   "Q_M_big"
+  ],
+  "law": "Q_g_field = 4 * Q_E_orb^2 * Q_m^-2 * Q_G^-1 * Q_M_big^-1",
+  "proof": "+1xEQ_Eorb -1/2xEQ_gfield",
+  "k_data": 0.998,
+  "k_narrow": 1.0887564557354026,
+  "k_shift": 1.1246689621693267
+ },
+ {
+  "A": "Q_PE_orb",
+  "B": "Q_F_grav",
+  "probe_k": 1.453,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_r_orb"
+  ],
+  "law": "Q_F_grav = 1 * Q_PE_orb^1 * Q_r_orb^-1",
+  "proof": "-1xEQ_Fgrav +1xEQ_PEorb",
+  "k_data": 1.219,
+  "k_narrow": 1.1865951742745533,
+  "k_shift": 1.2302064634236796
+ },
+ {
+  "A": "Q_PE_orb",
+  "B": "Q_g_field",
+  "probe_k": 1.442,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m",
+   "Q_M_big"
+  ],
+  "law": "Q_g_field = 1 * Q_PE_orb^2 * Q_m^-2 * Q_G^-1 * Q_M_big^-1",
+  "proof": "+1xEQ_PEorb -1/2xEQ_gfield",
+  "k_data": 0.998,
+  "k_narrow": 1.088756478406988,
+  "k_shift": 1.1246689685788758
+ },
+ {
+  "A": "Q_W_wt",
+  "B": "Q_E_orb",
+  "probe_k": 1.406,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_v_esc"
+  ],
+  "law": "Q_E_orb = 1/4 * Q_W_wt^1 * Q_g^-1 * Q_v_esc^2",
+  "proof": "+1xEQ_Eorb -2xEQ_vesc -1xEQ_weight",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_omega",
+  "B": "Q_ac",
+  "probe_k": 1.5,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_r"
+  ],
+  "law": "Q_ac = 1 * Q_omega^2 * Q_r^1",
+  "proof": "+1xEQ_ac +2xEQ_vtan",
+  "k_data": 1.993,
+  "k_narrow": 2.020979182826041,
+  "k_shift": 2.000510863234428
+ },
+ {
+  "A": "Q_L_ang",
+  "B": "Q_KE_rot",
+  "probe_k": 1.259,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_omega"
+  ],
+  "law": "Q_KE_rot = 1/2 * Q_L_ang^1 * Q_omega^1",
+  "proof": "+1xEQ_KErot -1xEQ_L_Iw",
+  "k_data": 1.259,
+  "k_narrow": 1.138641965762445,
+  "k_shift": 1.0780609310509894
+ },
+ {
+  "A": "Q_F_incl",
+  "B": "Q_F_grav",
+  "probe_k": 1.333,
+  "verdict": "ADDITIVE-MEDIATED",
+  "tag": "NOT-DERIVABLE(monomial)",
+  "note": "Q_F_incl appears only in additive/trig eqs",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_N_incl",
+  "B": "Q_F_grav",
+  "probe_k": 1.331,
+  "verdict": "ADDITIVE-MEDIATED",
+  "tag": "NOT-DERIVABLE(monomial)",
+  "note": "Q_N_incl appears only in additive/trig eqs",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_N_incl",
+  "B": "Q_E_orb",
+  "probe_k": 1.378,
+  "verdict": "ADDITIVE-MEDIATED",
+  "tag": "NOT-DERIVABLE(monomial)",
+  "note": "Q_N_incl appears only in additive/trig eqs",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_F_incl",
+  "B": "Q_E_orb",
+  "probe_k": 1.378,
+  "verdict": "ADDITIVE-MEDIATED",
+  "tag": "NOT-DERIVABLE(monomial)",
+  "note": "Q_F_incl appears only in additive/trig eqs",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_v_max",
+  "B": "Q_E_shm",
+  "probe_k": 1.297,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m"
+  ],
+  "law": "Q_E_shm = 1/2 * Q_v_max^2 * Q_m^1",
+  "proof": "-1/2xEQ_E_kA +1xEQ_om_km +1xEQ_vmax",
+  "k_data": 1.538,
+  "k_narrow": 1.7636928773700333,
+  "k_shift": 1.719034797277595
+ },
+ {
+  "A": "Q_PE_g",
+  "B": "Q_E_orb",
+  "probe_k": 1.177,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_h",
+   "Q_v_esc"
+  ],
+  "law": "Q_E_orb = 1/4 * Q_PE_g^1 * Q_g^-1 * Q_h^-1 * Q_v_esc^2",
+  "proof": "+1xEQ_Eorb -1xEQ_PEg -2xEQ_vesc",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_f",
+  "B": "Q_a_max",
+  "probe_k": 1.394,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_A_amp"
+  ],
+  "law": "Q_a_max = 4pi^2 * Q_f^2 * Q_A_amp^1",
+  "proof": "+2xEQ_T_om +1xEQ_amax -2xEQ_f_T",
+  "k_data": 1.992,
+  "k_narrow": 2.0024336174773336,
+  "k_shift": 2.001790375969393
+ },
+ {
+  "A": "Q_v_max",
+  "B": "Q_a_shm",
+  "probe_k": 1.156,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_A_amp",
+   "Q_x_shm"
+  ],
+  "law": "Q_a_shm = 1 * Q_v_max^2 * Q_x_shm^1 * Q_A_amp^-2",
+  "proof": "-1/2xEQ_a_x +1xEQ_vmax",
+  "k_data": 1.516,
+  "k_narrow": 1.486049880131096,
+  "k_shift": 1.6699335667540582
+ },
+ {
+  "A": "Q_v_shm",
+  "B": "Q_a_max",
+  "probe_k": 1.143,
+  "verdict": "BAYESIAN ARTIFACT (k moves with priors)",
+  "tag": "NOT-DERIVABLE(monomial)",
+  "note": "Q_v_shm appears only in additive/trig eqs",
+  "k_data": 1.269,
+  "k_narrow": 0.620858811453665,
+  "k_shift": 0.834360285889012
+ },
+ {
+  "A": "Q_v",
+  "B": "Q_KE_rot",
+  "probe_k": 1.309,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m"
+  ],
+  "law": "Q_KE_rot = 1/2 * Q_v^2 * Q_m^1",
+  "proof": "-1xEQ_I_mr2 +1xEQ_KErot -2xEQ_L_Iw +2xEQ_L_mvr",
+  "k_data": 1.813,
+  "k_narrow": 1.8316742205112415,
+  "k_shift": 1.7759746703655885
+ },
+ {
+  "A": "Q_v_max",
+  "B": "Q_KE_rot",
+  "probe_k": 1.059,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_A_amp",
+   "Q_I_rot"
+  ],
+  "law": "Q_KE_rot = 1/2 * Q_v_max^2 * Q_I_rot^1 * Q_A_amp^-2",
+  "proof": "-1/2xEQ_KErot +1xEQ_vmax",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_E_orb",
+  "B": "Q_PE_orb",
+  "probe_k": 1.107,
+  "verdict": "PROVEN PURE",
+  "tag": "PROVEN PURE",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [],
+  "law": "Q_PE_orb = 2 * Q_E_orb^1",
+  "proof": "+1xEQ_Eorb -1xEQ_PEorb",
+  "k_data": 1.0,
+  "k_narrow": 1.0008340196398628,
+  "k_shift": 1.0008340536323528
+ },
+ {
+  "A": "Q_f",
+  "B": "Q_KE_rot",
+  "probe_k": 1.31,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_I_rot"
+  ],
+  "law": "Q_KE_rot = 10^1.295 * Q_f^2 * Q_I_rot^1",
+  "proof": "+1xEQ_KErot +2xEQ_T_om -2xEQ_f_T",
+  "k_data": 2.005,
+  "k_narrow": 2.078263652078987,
+  "k_shift": 1.92537955723494
+ },
+ {
+  "A": "Q_v_tan",
+  "B": "Q_KE_rot",
+  "probe_k": 1.126,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_m"
+  ],
+  "law": "Q_KE_rot = 1/2 * Q_v_tan^2 * Q_m^1",
+  "proof": "+1xEQ_I_mr2 +1xEQ_KErot -2xEQ_vtan",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ },
+ {
+  "A": "Q_F_spr",
+  "B": "Q_PE_spr",
+  "probe_k": 1.02,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "2",
+  "k_float": 2.0,
+  "extras": [
+   "Q_k_spr"
+  ],
+  "law": "Q_PE_spr = 1/2 * Q_F_spr^2 * Q_k_spr^-1",
+  "proof": "+1xEQ_Fspr -1/2xEQ_PEspr",
+  "k_data": 1.371,
+  "k_narrow": 1.6395929406333727,
+  "k_shift": 1.4563126583683759
+ },
+ {
+  "A": "Q_a_shm",
+  "B": "Q_a_max",
+  "probe_k": 0.933,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_A_amp",
+   "Q_x_shm"
+  ],
+  "law": "Q_a_max = 1 * Q_a_shm^1 * Q_x_shm^-1 * Q_A_amp^1",
+  "proof": "-1xEQ_a_x +1xEQ_amax",
+  "k_data": 0.93,
+  "k_narrow": 0.6533870662679104,
+  "k_shift": 0.7428485826467788
+ },
+ {
+  "A": "Q_p",
+  "B": "Q_PE_orb",
+  "probe_k": 1.013,
+  "verdict": "PROVEN CONDITIONAL",
+  "tag": "PROVEN CONDITIONAL",
+  "k_exact": "1",
+  "k_float": 1.0,
+  "extras": [
+   "Q_v",
+   "Q_v_esc"
+  ],
+  "law": "Q_PE_orb = 1/2 * Q_p^1 * Q_v^-1 * Q_v_esc^2",
+  "proof": "-1/2xEQ_PEorb +1/2xEQ_p_mv +1xEQ_vesc",
+  "k_data": null,
+  "k_narrow": null,
+  "k_shift": null
+ }
+]

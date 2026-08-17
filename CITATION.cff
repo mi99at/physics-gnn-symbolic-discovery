@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Solve, Mine, Prove: A Self-Auditing Graph Neural Network for Classical Mechanics"
+type: software
+authors:
+  - family-names: Minnatullah
+    given-names: Md
+    email: mdminnatullah970@gmail.com
+repository-code: "https://github.com/[GitHub-username]/solve-mine-prove"
+abstract: "A reproducible, self-auditing graph-neural-network benchmark for route learning and relation mining in a closed classical-mechanics corpus."
