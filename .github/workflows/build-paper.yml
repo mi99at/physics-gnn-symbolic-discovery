@@ -1,15 +1,6 @@
 name: Build paper PDF
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "paper/**"
-      - ".github/workflows/build-paper.yml"
-  pull_request:
-    paths:
-      - "paper/**"
-      - ".github/workflows/build-paper.yml"
   workflow_dispatch:
 
 permissions:

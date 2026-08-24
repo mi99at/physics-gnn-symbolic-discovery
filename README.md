@@ -1,8 +1,6 @@
 # Physics GNN Symbolic Discovery
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21984786.svg)](https://doi.org/10.5281/zenodo.21984786)
-[![Validate release artifacts](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/validate-release.yml/badge.svg)](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/validate-release.yml)
-[![Build paper PDF](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/build-paper.yml/badge.svg)](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/build-paper.yml)
 [![License: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg)](LICENSE)
 [![Data and paper: CC BY 4.0](https://img.shields.io/badge/data%20%26%20paper-CC%20BY%204.0-green.svg)](LICENSE-DATA.md)
 
@@ -10,7 +8,7 @@ This repository contains the code for a self-auditing graph neural network for a
 
 The project does **not** claim to discover new physics. In a closed corpus, every valid relationship must be a consequence of the encoded equations. A useful discovery pipeline should identify that fact and distinguish it from distribution-dependent correlations.
 
-**Read the paper:** [PDF](paper/physics_gnn_symbolic_discovery.pdf) · [DOI record](https://doi.org/10.5281/zenodo.21984786) · [Versioned release](https://github.com/mi99at/physics-gnn-symbolic-discovery/releases/tag/v1.0.0)
+**Read the paper:** [corrected PDF](paper/physics_gnn_symbolic_discovery.pdf) · [DOI record](https://doi.org/10.5281/zenodo.21984786) · [corrected v1.0.1 release](https://github.com/mi99at/physics-gnn-symbolic-discovery/releases/tag/v1.0.1)
 
 ## Results at a glance
 
@@ -67,7 +65,7 @@ To verify the archived graph, training metrics, 400-pair audit, and release chec
 python scripts/validate_release.py
 ```
 
-Every push and pull request runs the same release validation automatically. Changes to the manuscript also trigger a clean LaTeX build.
+The repository includes GitHub Actions definitions for release validation and clean LaTeX builds. They can also be run locally with the commands above.
 
 ## Publication status
 
