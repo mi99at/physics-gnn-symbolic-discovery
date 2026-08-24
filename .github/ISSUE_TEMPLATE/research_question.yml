@@ -1,0 +1,30 @@
+name: Research question or extension
+description: Discuss a claim, audit result, or carefully scoped extension.
+title: "[Research]: "
+labels: [research-question]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Physics graph or scenario generator
+        - GNN architecture or training
+        - Counterfactual relation mining
+        - Symbolic audit
+        - Manuscript claim
+        - External-data extension
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or proposal
+      description: Identify the relevant file, manuscript section, equation, or catalog row.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or references
+      description: Share reproducible evidence or primary references when available.

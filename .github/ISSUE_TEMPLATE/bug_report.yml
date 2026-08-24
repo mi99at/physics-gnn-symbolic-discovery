@@ -1,0 +1,35 @@
+name: Bug or reproduction failure
+description: Report a code defect, artifact mismatch, or failed reproduction.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping make this research package more reproducible.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the exact command and complete error message.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, CPU/GPU, and PyTorch version.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Release-validation output
+      description: Paste the output of `python scripts/validate_release.py`.
+    validations:
+      required: true

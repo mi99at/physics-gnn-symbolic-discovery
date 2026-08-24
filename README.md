@@ -1,8 +1,29 @@
 # Physics GNN Symbolic Discovery
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21984786.svg)](https://doi.org/10.5281/zenodo.21984786)
+[![Validate release artifacts](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/validate-release.yml/badge.svg)](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/validate-release.yml)
+[![Build paper PDF](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/build-paper.yml/badge.svg)](https://github.com/mi99at/physics-gnn-symbolic-discovery/actions/workflows/build-paper.yml)
+[![License: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg)](LICENSE)
+[![Data and paper: CC BY 4.0](https://img.shields.io/badge/data%20%26%20paper-CC%20BY%204.0-green.svg)](LICENSE-DATA.md)
+
 This repository contains the code for a self-auditing graph neural network for a closed, synthetic classical-mechanics corpus. The goal is deliberately modest and testable: learn to infer missing physical quantities from partial observations, probe the trained solver for candidate relationships, and then audit those candidates against the equations used to generate the corpus.
 
 The project does **not** claim to discover new physics. In a closed corpus, every valid relationship must be a consequence of the encoded equations. A useful discovery pipeline should identify that fact and distinguish it from distribution-dependent correlations.
+
+**Read the paper:** [PDF](paper/physics_gnn_symbolic_discovery.pdf) · [DOI record](https://doi.org/10.5281/zenodo.21984786) · [Versioned release](https://github.com/mi99at/physics-gnn-symbolic-discovery/releases/tag/v1.0.0)
+
+## Results at a glance
+
+| Component | Archived result |
+|---|---:|
+| Typed physics graph | 305 nodes, 1,217 directed edges |
+| Scenario-consistent training corpus | 650,000 worlds across 13 domains |
+| Held-out route tests at epoch 40 | $R^2=0.986$--$0.994$ |
+| Candidate relationships screened and audited | 400 |
+| Proven monomial consequences | 254 |
+| Prior-sensitive artifacts | 33 |
+
+These counts are machine-checked by `scripts/validate_release.py`. The remaining catalog entries are explicitly marked as additive-mediated, unresolved-invariant, or unresolved rather than being presented as discoveries.
 
 ## What is in this release
 
@@ -40,6 +61,14 @@ python derivation_checker_v1.py
 
 The full training run is GPU-oriented. `python gnn_trainer_v9.py --smoke` is a short sanity check; it is not intended to reproduce the reported final results.
 
+To verify the archived graph, training metrics, 400-pair audit, and release checksums without retraining:
+
+```bash
+python scripts/validate_release.py
+```
+
+Every push and pull request runs the same release validation automatically. Changes to the manuscript also trigger a clean LaTeX build.
+
 ## Publication status
 
 The complete 400-candidate discovery screen and matching catalog are tracked in this repository. The large scenario arrays and checkpoints are attached to the [v1.0.0 release](https://github.com/mi99at/physics-gnn-symbolic-discovery/releases/tag/v1.0.0), with checksums in `ARTIFACTS.md`. See `RESULTS_STATUS.md` for the audit boundary and verified results.
@@ -51,6 +80,12 @@ The manuscript is available as a [compiled PDF](paper/physics_gnn_symbolic_disco
 Please cite the software metadata in `CITATION.cff`:
 
 > Md Minnatullah (2026). *Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics*. Zenodo. https://doi.org/10.5281/zenodo.21984786
+
+Machine-readable citation and software metadata are provided in `CITATION.cff`, `codemeta.json`, and `.zenodo.json`.
+
+## Contributing
+
+Reproduction reports, bug reports, and carefully scoped extensions are welcome. Please read `CONTRIBUTING.md` before opening an issue or pull request.
 
 ## License
 

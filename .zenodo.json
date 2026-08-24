@@ -1,0 +1,29 @@
+{
+  "title": "Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics",
+  "description": "Code, manuscript, and archived experiment metadata for a reproducible graph-neural-network benchmark that learns held-out solution routes in a closed classical-mechanics corpus, mines candidate power-law relationships, and audits them against the encoded equation system and shifted sampling priors.",
+  "upload_type": "software",
+  "version": "1.0.1",
+  "publication_date": "2026-08-24",
+  "creators": [
+    {
+      "name": "Minnatullah, Md",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "graph neural networks",
+    "scientific machine learning",
+    "symbolic discovery",
+    "classical mechanics",
+    "reproducible research",
+    "relation mining"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mi99at/physics-gnn-symbolic-discovery",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

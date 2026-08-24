@@ -8,9 +8,17 @@ authors:
     email: mdminnatullah970@gmail.com
 repository-code: "https://github.com/mi99at/physics-gnn-symbolic-discovery"
 abstract: "A reproducible, self-auditing graph-neural-network benchmark for route learning and relation mining in a closed classical-mechanics corpus."
-version: "1.0.0"
-date-released: 2026-08-18
+version: "1.0.1"
+date-released: 2026-08-24
 license: MIT
+doi: 10.5281/zenodo.21984786
+url: "https://doi.org/10.5281/zenodo.21984786"
+keywords:
+  - graph neural networks
+  - scientific machine learning
+  - symbolic discovery
+  - classical mechanics
+  - reproducible research
 preferred-citation:
   type: article
   title: "Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics"
