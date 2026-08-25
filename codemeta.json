@@ -2,10 +2,10 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "Physics GNN Symbolic Discovery",
-  "description": "A self-auditing graph-neural-network benchmark for route learning and relation mining in a closed classical-mechanics corpus.",
+  "description": "A self-auditing graph-neural-network benchmark for multi-path route learning, node and edge feature diagnostics, non-graph baselines, and audited relation mining in a closed classical-mechanics corpus.",
   "codeRepository": "https://github.com/mi99at/physics-gnn-symbolic-discovery",
-  "version": "1.0.1",
-  "datePublished": "2026-08-24",
+  "version": "1.1.0",
+  "datePublished": "2026-08-25",
   "license": "https://spdx.org/licenses/MIT",
   "programmingLanguage": "Python",
   "applicationCategory": "Scientific machine learning",
@@ -21,5 +21,5 @@
     "familyName": "Minnatullah",
     "email": "mdminnatullah970@gmail.com"
   },
-  "identifier": "https://doi.org/10.5281/zenodo.21984786"
+  "identifier": "https://doi.org/10.5281/zenodo.21984785"
 }

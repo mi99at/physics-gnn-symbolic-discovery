@@ -2,6 +2,33 @@
 
 All notable research-package changes are documented here. Published artifacts are never replaced in place.
 
+## 1.1.0 - 2026-08-25
+
+### Added
+
+- Rewrote and expanded the manuscript around the author's graph-based view of
+  physics, including a multi-route mass example and explicit tables for the
+  32-dimensional node features and 16-dimensional edge features.
+- Added a deterministic inference-time intervention study for SI node
+  dimensions, semantic node features, edge operators, edge role/direction,
+  edge flags, and reverse edges.
+- Added a near-parameter-matched flat MLP baseline with three independent
+  seeds, validation-only checkpoint selection, a target-mean reference, and an
+  analytic formula oracle.
+- Added an exact CPU dependency lock, a reproducibility map, a real-data
+  roadmap, a responsible-publicity kit, and an isolated multi-seed GNN runner.
+
+### Changed
+
+- The manuscript now uses the stable concept DOI, which always resolves to the
+  newest archival version.
+- Clarified the distinction between the archived one-seed GNN result,
+  inference-time checkpoint diagnostics, and independently trained multi-seed
+  baselines.
+- Added the author's Bihar background and long-term AI-for-physics mission as
+  motivation while explicitly keeping new-physics discovery outside the
+  current paper's claims.
+
 ## 1.0.1 - 2026-08-24
 
 ### Corrected

@@ -1,0 +1,4 @@
+# Exact CPU environment used for the v1.1 release diagnostics on 2026-08-25.
+# A CUDA-enabled PyTorch build may be substituted for full GNN retraining.
+numpy==2.3.5
+torch==2.13.0

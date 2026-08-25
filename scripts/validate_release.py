@@ -15,7 +15,10 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 EXPECTED_HASHES = {
     "catalog_v1.json": "a0d822c081987f318ea52cf4cfb3d0ee073ddd1560d9253b754ee383a126ff9a",
     "discoveries_v1.json": "f985ca912e9d2be32eb125eb6dcd9015a1b97341a8f9355755b3a854019545f3",
-    "paper/physics_gnn_symbolic_discovery.pdf": "7552e711f624f71a17bbc1c41d3eacba0d0af6b2248b84aa6401ef810109c261",
+    "paper/physics_gnn_symbolic_discovery.pdf": "c7245a0c19787250eac2c455e0d7373b941ef9ac220112958df50a5e75318995",
+    "experiments/v1_1_checkpoint_ablations.json": "5ad9298ef70db5541829a6934b33aa20a86a255b6a923fa79943bf01b77beff1",
+    "experiments/v1_1_flat_mlp_baseline.json": "a2fdbc91d27a4566e19064eca71e5c5bad4a504284545252e6dc91e3e8242efb",
+    "assets/physics-graph-social-preview.png": "15c872c6cc78f7d340f43b4291bc278b3ce24514547c98cdd69a514fa0f4e035",
 }
 
 
@@ -104,6 +107,91 @@ def validate_discoveries() -> None:
     require(verdict_counts == expected_counts, f"unexpected audit counts: {verdict_counts}")
 
 
+def validate_checkpoint_diagnostics() -> None:
+    report = load_json("experiments/v1_1_checkpoint_ablations.json")
+    require(
+        report["study_type"]
+        == "inference-time feature ablation of one archived checkpoint",
+        "unexpected checkpoint-diagnostic study type",
+    )
+    require(
+        report["checkpoint_sha256"]
+        == "66c3cf45b1476b40e3e65a84ea6106b51ca911a665d9bf145bb46314eec7302e",
+        "checkpoint diagnostic references an unexpected checkpoint",
+    )
+    require(report["subset"]["seed"] == 20260825, "diagnostic subset seed drift")
+    require(report["subset"]["per_ban"] == 100, "diagnostic subset size drift")
+    conditions = report["conditions"]
+    expected_conditions = {
+        "full",
+        "node_si_zero",
+        "node_semantic_zero",
+        "edge_operators_zero",
+        "edge_role_direction_zero",
+        "edge_flags_zero",
+        "reverse_edges_removed",
+    }
+    require(set(conditions) == expected_conditions, "diagnostic condition set drift")
+    for name, result in conditions.items():
+        require(
+            all(result["ladder"][f"L{i}"]["n"] == 100 for i in range(5)),
+            f"unexpected ladder sample count in {name}",
+        )
+    require(
+        conditions["full"]["aggregate"]["mae_log10_scaled"] < 0.01,
+        "full-checkpoint diagnostic MAE drift",
+    )
+    require(
+        conditions["edge_role_direction_zero"]["aggregate"]["mae_log10_scaled"]
+        > 10 * conditions["full"]["aggregate"]["mae_log10_scaled"],
+        "edge role/direction diagnostic no longer shows the archived degradation",
+    )
+
+
+def validate_flat_baseline() -> None:
+    report = load_json("experiments/v1_1_flat_mlp_baseline.json")
+    require(
+        report["study_type"]
+        == "multi-seed flat MLP baseline on the fixed ladder exam",
+        "unexpected flat-baseline study type",
+    )
+    require(report["model_parameters"] == 1916637, "flat MLP parameter-count drift")
+    require(report["data"]["training_rows_used"] == 617500, "training split drift")
+    require(report["data"]["validation_rows_excluded"] == 32500, "validation split drift")
+    require(report["data"]["validation_rows_evaluated"] == 10000, "validation subset drift")
+    require(
+        [row["seed"] for row in report["seeds"]] == [7, 17, 29],
+        "baseline seeds drift",
+    )
+    require(
+        all(row["test_evaluated_once_after_validation_selection"] for row in report["seeds"]),
+        "baseline test-selection policy drift",
+    )
+    for ladder in (f"L{i}" for i in range(5)):
+        values = [row["ladder"][ladder]["r2"] for row in report["seeds"]]
+        summary = report["summary"]["ladder"][ladder]
+        require(
+            math.isclose(summary["r2_mean"], sum(values) / len(values), abs_tol=1e-12),
+            f"baseline {ladder} mean is internally inconsistent",
+        )
+        oracle = report["reference_baselines"]["analytic_formula_oracle"]["ladder"][
+            ladder
+        ]["r2"]
+        require(math.isclose(oracle, 1.0, abs_tol=1e-10), f"{ladder} oracle drift")
+
+
+def validate_manuscript_source() -> None:
+    source = (ROOT / "paper/physics_gnn_symbolic_discovery.tex").read_text(
+        encoding="utf-8"
+    )
+    require("[MLP" not in source, "unresolved MLP placeholder in manuscript")
+    require("10.5281/zenodo.21984785" in source, "stable concept DOI missing")
+    require("a world can be represented as a graph" in source, "author graph perspective missing")
+    require("low-income family in Bihar" in source, "author background statement missing")
+    require("node features" in source.lower(), "node features are not discussed")
+    require("edge features" in source.lower(), "edge features are not discussed")
+
+
 def validate_hashes() -> None:
     for relative_path, expected in EXPECTED_HASHES.items():
         actual = sha256(ROOT / relative_path)
@@ -111,7 +199,15 @@ def validate_hashes() -> None:
 
 
 def main() -> int:
-    checks = [validate_graph, validate_history, validate_discoveries, validate_hashes]
+    checks = [
+        validate_graph,
+        validate_history,
+        validate_discoveries,
+        validate_checkpoint_diagnostics,
+        validate_flat_baseline,
+        validate_manuscript_source,
+        validate_hashes,
+    ]
     for check in checks:
         check()
         print(f"PASS {check.__name__}")

@@ -1,9 +1,28 @@
 # Paper source
 
-`physics_gnn_symbolic_discovery.tex` is the submission source aligned with the archived v9 training history and the restored 400-candidate audit. `physics_gnn_symbolic_discovery.pdf` is the visually verified build and carries the reserved Zenodo DOI [10.5281/zenodo.21984786](https://doi.org/10.5281/zenodo.21984786). The large data arrays and checkpoints are attached to the versioned release listed in `../ARTIFACTS.md`.
+physics_gnn_symbolic_discovery.tex is the source for the current manuscript;
+physics_gnn_symbolic_discovery.pdf is the compiled and visually verified
+version. The paper uses the stable concept DOI
+[10.5281/zenodo.21984785](https://doi.org/10.5281/zenodo.21984785), which
+always resolves to the newest archival version.
 
-The manuscript deliberately avoids presenting rediscovered corollaries as new physics. Its contribution is an auditable, closed-world benchmark and the evidence required to evaluate its claims.
+## Version 1.1
 
-## Version note
+The expanded manuscript:
 
-Patch release `v1.0.1` corrects one provenance detail in the manuscript: the best archived validation MAE of 0.02356 occurred at epoch 37, not epoch 31. The metric value and all held-out route results are unchanged. See `../CHANGELOG.md`.
+- presents the author's view of physical worlds as graphs of nodes and edges;
+- uses several valid paths to mass as the motivating example;
+- documents the complete node-feature and edge-feature encodings;
+- adds a three-seed, near-parameter-matched non-graph baseline;
+- adds diagnostic interventions on SI/semantic node features, operator/role
+  edge features, flags, and reverse edges;
+- explains the author's Bihar background, resource constraints, and long-term
+  mission without presenting the synthetic benchmark as new physics; and
+- gives a concrete route from the closed benchmark to real measurements.
+
+The baseline is selected by validation data only. The feature interventions
+operate on one archived checkpoint at inference time and are explicitly not
+described as retrained ablations.
+
+The large data arrays and checkpoints are attached to the versioned release
+listed in ../ARTIFACTS.md.

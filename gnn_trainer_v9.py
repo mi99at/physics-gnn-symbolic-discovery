@@ -53,7 +53,7 @@ class C:
     n_bases  = 8
     batch    = 64 if SMOKE else (64 if LOWMEM else 128)
     accum    = 1 if SMOKE else 2
-    epochs   = 1 if SMOKE else 60
+    epochs   = 1 if SMOKE else int(os.environ.get("PHYSICS_GNN_EPOCHS", "60"))
     lr       = 3e-4
     wd       = 0.01
     warmup   = 50 if SMOKE else 1000
@@ -61,7 +61,7 @@ class C:
     val_frac = 0.05
     sign_w   = 0.2
     ladder_every = 1 if SMOKE else 2
-    seed     = 7
+    seed     = int(os.environ.get("PHYSICS_GNN_SEED", "7"))
 
 torch.manual_seed(C.seed); np.random.seed(C.seed)
 DEV = "cuda" if torch.cuda.is_available() else "cpu"
@@ -69,6 +69,10 @@ AMP = DEV == "cuda"
 
 # ── storage: Drive on Colab, local otherwise ────────────────────────
 def setup_dirs():
+    override = os.environ.get("PHYSICS_GNN_CKDIR")
+    if override:
+        os.makedirs(override, exist_ok=True)
+        return override
     if os.path.exists("/content"):
         try:
             if not os.path.exists("/content/drive/MyDrive"):

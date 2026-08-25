@@ -1,0 +1,24 @@
+{
+  "version": "1.1.0",
+  "release_date": "2026-08-25",
+  "title": "Physics GNN Symbolic Discovery: A Self-Auditing Graph Neural Network for Classical Mechanics",
+  "stable_concept_doi": "10.5281/zenodo.21984785",
+  "claim_boundary": "Closed synthetic benchmark: route learning, checkpoint sensitivity, and auditability; no claim of a new physical law.",
+  "evidence": {
+    "archived_gnn": "one archived seed; epoch-40 L0-L4 R2 values 0.98996, 0.99401, 0.98605, 0.99139, 0.98595",
+    "flat_mlp": "three seeds; validation-selected five-epoch reference; mean L0-L4 R2 values 0.96763, 0.92487, 0.87659, 0.87036, 0.51508",
+    "checkpoint_interventions": "one archived checkpoint; inference-time interventions; deterministic 100-example subset per route",
+    "audit": "400 screened pairs; 254 certified monomial consequences; 33 prior-sensitive artifacts"
+  },
+  "sha256": {
+    "paper/physics_gnn_symbolic_discovery.pdf": "c7245a0c19787250eac2c455e0d7373b941ef9ac220112958df50a5e75318995",
+    "paper/physics_gnn_symbolic_discovery.tex": "434302f72da9a28943268015d932d83edcc0da77a1245882e13019116a22dfe8",
+    "experiments/v1_1_checkpoint_ablations.json": "5ad9298ef70db5541829a6934b33aa20a86a255b6a923fa79943bf01b77beff1",
+    "experiments/v1_1_flat_mlp_baseline.json": "a2fdbc91d27a4566e19064eca71e5c5bad4a504284545252e6dc91e3e8242efb",
+    "requirements-lock.txt": "431f90c7a7fe72cabfe8286bfe73959e8578f6f30e5777b903c0016a91849c74",
+    "scripts/evaluate_checkpoint_ablations.py": "4a69f93429ca4125a7643309631660a6f02dc40156bb3e846ddc4390ef500278",
+    "scripts/train_flat_mlp_baseline.py": "625650d8738803d080f3c99fb3ce11fc308d77f4bfd7c4692a3ea84059a27e53",
+    "scripts/validate_release.py": "4762da020a8f266793af3de1cbbf208ddc88d268b9f4756297f8ddea87fdeaa0",
+    "assets/physics-graph-social-preview.png": "15c872c6cc78f7d340f43b4291bc278b3ce24514547c98cdd69a514fa0f4e035"
+  }
+}

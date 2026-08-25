@@ -11,6 +11,16 @@ Thank you for taking the time to examine this project. Reproduction reports are 
 
 Questions about scientific claims should identify the manuscript section, equation, artifact, or catalog row involved. Please distinguish a verified inconsistency from a proposed extension.
 
+## Real-data collaborations
+
+Collaborations are especially welcome from people who can contribute
+independently collected mechanics, orbital, wave, fluid, or materials data.
+Please describe the instrument or source, units, calibration, uncertainty,
+license, and a leakage-resistant train/test split. A public dataset link alone
+is not enough; the proposal should explain how its measured fields map to graph
+nodes and how an external replication could be performed. See
+REAL_DATA_ROADMAP.md for the staged protocol.
+
 ## Pull requests
 
 - Keep changes focused and explain why they are needed.
