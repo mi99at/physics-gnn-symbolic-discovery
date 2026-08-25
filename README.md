@@ -1,6 +1,7 @@
 # Physics GNN Symbolic Discovery
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21984785.svg)](https://doi.org/10.5281/zenodo.21984785)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0001--6750--791X-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0001-6750-791X)
 [![License: MIT](https://img.shields.io/badge/code%20license-MIT-blue.svg)](LICENSE)
 [![Data and paper: CC BY 4.0](https://img.shields.io/badge/data%20%26%20paper-CC%20BY%204.0-green.svg)](LICENSE-DATA.md)
 
@@ -132,6 +133,7 @@ experiment, then public JPL orbital data and NIST materials measurements.
 ## Publication and outreach
 
 - Stable archive for all versions: https://doi.org/10.5281/zenodo.21984785
+- Author ORCID: https://orcid.org/0009-0001-6750-791X
 - GitHub releases: https://github.com/mi99at/physics-gnn-symbolic-discovery/releases
 - Responsible summaries and collaboration text: [PUBLICITY_KIT.md](PUBLICITY_KIT.md)
 - Reproduction or collaboration guidance: [CONTRIBUTING.md](CONTRIBUTING.md)

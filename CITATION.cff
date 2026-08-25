@@ -6,6 +6,7 @@ authors:
   - family-names: Minnatullah
     given-names: Md
     email: mdminnatullah970@gmail.com
+    orcid: "https://orcid.org/0009-0001-6750-791X"
 repository-code: "https://github.com/mi99at/physics-gnn-symbolic-discovery"
 abstract: "A reproducible, self-auditing graph-neural-network benchmark for multi-path route learning, node/edge feature diagnostics, non-graph baselines, and audited relation mining in a closed classical-mechanics corpus."
 version: "1.1.0"
@@ -25,5 +26,6 @@ preferred-citation:
   authors:
     - family-names: Minnatullah
       given-names: Md
+      orcid: "https://orcid.org/0009-0001-6750-791X"
   year: 2026
   doi: 10.5281/zenodo.21984785
