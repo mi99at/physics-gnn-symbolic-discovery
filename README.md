@@ -27,6 +27,21 @@ enough to reject false novelty before moving to real measurements.
 [stable DOI](https://doi.org/10.5281/zenodo.21984785) ·
 [latest release](https://github.com/mi99at/physics-gnn-symbolic-discovery/releases/tag/v1.1.0)
 
+## Try the equation-route challenge
+
+[Open Physics Route Lab](https://physics-route-lab-minnatullah.ayan14.chatgpt.site):
+hide measurements, inspect alternative routes to mass, force, momentum, or
+kinetic energy, and report an assumption or calculation that needs review.
+The page runs a small **symbolic solver, not the trained GNN**. Its calculation
+steps are not evidence of the network's internal reasoning.
+
+The [demo source and tests](demo/route-lab/README.md) are included here.
+Help by [reproducing an archived result](REPRODUCIBILITY.md),
+[checking physical assumptions](https://github.com/mi99at/physics-gnn-symbolic-discovery/issues),
+or [contributing independent measurements](REAL_DATA_ROADMAP.md).
+The [community launch kit](COMMUNITY_LAUNCH.md) includes draft communications
+and a first-month contribution plan.
+
 ## The graph idea
 
 The same hidden quantity can be reached through different physical routes. For

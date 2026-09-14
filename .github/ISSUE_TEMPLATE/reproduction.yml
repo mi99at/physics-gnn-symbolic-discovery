@@ -1,0 +1,33 @@
+name: Reproduce the archived release
+description: Share what passed or failed on an independent computer.
+title: "[Reproduction]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for testing. Release validation checks archived files; it is not a fresh training replication. Never attach credentials or personal files."
+  - type: input
+    id: revision
+    attributes:
+      label: Commit or release tested
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, CPU or GPU, and dependency versions.
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands and result
+      description: Include exact commands, output, and whether this was validation, checkpoint evaluation, or fresh training.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: differences
+    attributes:
+      label: Differences from the reported result
+      description: Include the expected result and relevant artifact; successful reproductions are welcome too.

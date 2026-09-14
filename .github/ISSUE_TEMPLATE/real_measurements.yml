@@ -1,0 +1,30 @@
+name: Contribute real measurements
+description: Propose a small, well-documented independent physics experiment.
+title: "[Real data]: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Physical question and quantities
+      description: What will be measured or predicted? Identify object, time, frame, and equation assumptions.
+    validations:
+      required: true
+  - type: textarea
+    id: measurement
+    attributes:
+      label: Instrument, units, and uncertainty
+      description: Describe equipment, calibration, sampling, trial procedure, and uncertainty estimates. Do not attach personal identifiers or precise home locations.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Raw data and permission to share
+      description: Link to raw data if available, explain its source, and state the license or permission. A proposal can be submitted before data exists.
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Independent evaluation plan
+      description: Which lengths, devices, trials, or conditions will be held out? What direct-formula baseline will be used?

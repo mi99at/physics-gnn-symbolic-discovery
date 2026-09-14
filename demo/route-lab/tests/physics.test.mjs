@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {solve, defaults, quantities} from '../dist/physics.mjs';
+test('four distinct input sets can recover example mass',()=>{const r=solve('m',defaults,['F','a','p','v','K']);assert.equal(r.routes.length,4);for(const p of r.routes)assert.equal(p.value,2);});
+test('removing force and acceleration leaves three mass routes',()=>{const r=solve('m',defaults,['p','v','K']);assert.equal(r.routes.length,3);assert.equal(r.min,2);});
+test('momentum and energy recover mass without knowing speed',()=>assert.equal(solve('m',defaults,['p','K']).min,2));
+test('an indirect force route includes a mass derivation',()=>{const r=solve('F',defaults,['p','v','a']);assert.equal(r.routes.length,1);assert.equal(r.min,6);assert.equal(r.routes[0].steps.length,2);});
+test('target cannot leak through observations',()=>assert.equal(solve('m',defaults,['m']).routes.length,0));
+test('no observations yields no answer',()=>assert.equal(solve('m',defaults,[]).routes.length,0));
+test('inconsistent observations are preserved, not averaged',()=>{const r=solve('m',{...defaults,F:12},['F','a','p','v']);assert.equal(r.min,2);assert.equal(r.max,4);assert.equal(r.spread,.5);});
+test('invalid available measurements are rejected',()=>{for(const n of [0,-1,NaN,Infinity])assert.throws(()=>solve('m',{...defaults,v:n},['p','v']));});
+test('hidden invalid measurements do not affect the result',()=>assert.equal(solve('m',{...defaults,F:NaN},['p','v']).min,2));
+test('all 64 masks and all targets return consistent acyclic answers',()=>{const keys=Object.keys(quantities);for(const target of keys)for(let mask=0;mask<64;mask++){const inputs=keys.filter((_,i)=>mask&(1<<i));for(const r of solve(target,defaults,inputs).routes){assert.ok(Math.abs(r.value-defaults[target])<1e-10);assert.ok(!r.inputs.includes(target));assert.ok(r.inputs.every(k=>inputs.includes(k)));assert.equal(r.steps.at(-1).target,target);}}});
